@@ -1,0 +1,38 @@
+.feedback{
+    margin-bottom: 50px;
+    .feedback__container{
+        .title{
+            text-align: center;
+            margin-bottom: 20px;
+            h2{
+                font-size: 46px;
+            }
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            text-align: center;
+            background-color: rgb(128, 243, 93,);
+            box-shadow: 0px 1px 4px grey;
+            margin: 30px 10px;
+            border-radius: 12px;
+            padding: 20px;
+            .icon{
+                color: #221516;
+                font-size: 46px;
+            }
+            h2{
+                padding: 0px 0 10px;
+                font-size: 26px;
+                color: #192130;
+            }
+            p{
+                color: rgb(99, 97, 97);
+                line-height: 1.5em;
+            }
+        }
+    }
+}
