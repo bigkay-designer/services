@@ -57,6 +57,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid rgba(129, 127, 127, 0.3);
+  border-radius: 10px;
+  padding-bottom: 15px;
 }
 
 .footer .footer__container .contact__info .contact__info__div {
@@ -83,7 +86,7 @@
 }
 
 .footer .footer__container .socials {
-  margin: 20px 0;
+  margin: 30px 0;
   color: #d6d6d6;
 }
 
@@ -100,7 +103,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px 50px 10px;
+  margin: 15px 50px 10px;
 }
 
 .footer .footer__container .copyright {

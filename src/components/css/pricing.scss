@@ -1,7 +1,38 @@
 .prices{
     margin: 50px 0;
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(24, 23, 23, 0.4);
+        z-index: 200;
+    }
     .prices__container{
         padding: 0 15px;
+        .modal__form{
+            display: block !important;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 12px grey;
+            border-radius: 20px;
+            width: 300px;
+            padding: 30px 10px;
+            z-index: 200;
+            .close{
+                cursor: pointer;
+                .icon{
+                    font-size: 26px;
+                }
+            }
+        }
+        .hide__form{
+            display: none;
+        }
         .title{
             text-align: center;
             h2{

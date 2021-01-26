@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {Close} from '@material-ui/icons'
 import {Button} from '@material-ui/core'
+import Contact from './Contact'
 import '../css/pricing.css'
 function Pricing() {
+    const [openForm, setOpenForm] = useState(false)
+
+    const openFormHandler = (e) =>{
+        setOpenForm(true)
+    }
     return (
         <div className="prices" id="prices">
+            <div onClick={() => setOpenForm(false)} className={`${openForm && "overlay"}`}></div>
             <div className="prices__container">
+                <div className={`hide__form ${openForm && "modal__form"}`}>
+                    <div onClick={()=> setOpenForm(false)} className="close">
+                        <Close className="icon" />
+                    </div>
+                    <Contact />
+                </div>
                 <div className="title">
                     <h2>Affordable pricing plan for all customers</h2>
                 </div>
@@ -24,7 +38,7 @@ function Pricing() {
                             <li>Lor ectetur adipisicing elit. Quibusdam, fugit.</li>
                         </ul>
                     </div>
-                    <div className="btn">
+                    <div onClick={openFormHandler} className="btn">
                         <Button>Order now</Button>
                     </div>
                 </div>
@@ -44,7 +58,7 @@ function Pricing() {
                             <li>Lor ectetur adipisicing elit. Quibusdam, fugit.</li>
                         </ul>
                     </div>
-                    <div className="btn">
+                    <div onClick={openFormHandler} className="btn">
                         <Button>Order now</Button>
                     </div>
                 </div>
@@ -64,7 +78,7 @@ function Pricing() {
                             <li>Lor ectetur adipisicing elit. Quibusdam, fugit.</li>
                         </ul>
                     </div>
-                    <div className="btn">
+                    <div onClick={openFormHandler} className="btn">
                         <Button>Order now</Button>
                     </div>
                 </div>

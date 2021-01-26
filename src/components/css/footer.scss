@@ -29,6 +29,9 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          border-bottom: 1px solid rgba(129, 127, 127, 0.3);
+          border-radius: 10px;
+          padding-bottom: 15px;
           .contact__info__div{
               display: flex;
               justify-content: center;
@@ -45,7 +48,7 @@
           }
       }
       .socials{
-          margin: 20px 0;
+        margin: 30px 0;
         color: rgb(214, 214, 214);
         h3{
               text-align: center;
@@ -54,7 +57,7 @@
               display: flex;
               justify-content: space-around;
               align-items: center;
-              margin: 20px 50px 10px;
+              margin: 15px 50px 10px;
           }
       }
       .copyright{
