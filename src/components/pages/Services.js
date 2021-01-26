@@ -10,7 +10,7 @@ function Services() {
         setServiceData(serviceJson)
     }, [])
     return (
-        <div className="services">
+        <div className="services" id="services">
             <div className="services__container">
                 <div className="title">
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, odit!</h2>
@@ -27,22 +27,6 @@ function Services() {
                             </div>
                         </div>
                     ))}
-                </div>
-                <div className="otherServices">
-                    <div className="otherServices__bg">
-                        <div className="img"></div>
-                    </div>
-                    <div className="content">
-                        <div className="content__body">
-                            <h2>Lorem ipsum dolor sit amet.</h2>
-                            <ul>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

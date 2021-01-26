@@ -24,4 +24,10 @@
   height: 200px;
   margin-top: 40px;
 }
+
+@media screen and (max-width: 390px) {
+  .showCase .showCase__bg {
+    height: 100vh !important;
+  }
+}
 /*# sourceMappingURL=showcase.css.map */

@@ -1,0 +1,115 @@
+.footer {
+  margin-top: 50px;
+}
+
+.footer .footer__container {
+  background-color: #141b1b;
+}
+
+.footer .footer__container .links {
+  padding: 10px 10px 0;
+  margin-bottom: 20px;
+}
+
+.footer .footer__container .links ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ebebeb;
+}
+
+.footer .footer__container .links ul .ul__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__container .links ul li {
+  text-transform: capitalize;
+  padding-left: 5px;
+  list-style: none;
+}
+
+.footer .footer__container .contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__container .contact__info .contact__info__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+.footer .footer__container .contact__info .contact__info__div .icons {
+  color: #d6d6d6;
+}
+
+.footer .footer__container .contact__info .contact__info__div p {
+  cursor: pointer;
+  color: #ebebeb;
+  padding-left: 10px;
+}
+
+.footer .footer__container .socials {
+  margin: 20px 0;
+  color: #d6d6d6;
+}
+
+.footer .footer__container .socials h3 {
+  text-align: center;
+}
+
+.footer .footer__container .socials .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 50px 10px;
+}
+
+.footer .footer__container .copyright {
+  border: 1px solid #2c2c2c;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer .footer__container .copyright p {
+  color: #bdbdbd;
+}
+/*# sourceMappingURL=Footer.css.map */

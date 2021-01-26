@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=landing.css.map */
+.title__feedback {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title__feedback h2 {
+  font-size: 46px;
+}
+/*# sourceMappingURL=landing.css.map */

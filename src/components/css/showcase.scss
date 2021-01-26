@@ -24,3 +24,11 @@
         }
     }
 }
+
+@media screen and (max-width: 390px){
+    .showCase{
+        .showCase__bg{
+            height: 100vh !important;
+        }
+    }
+}
