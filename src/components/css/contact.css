@@ -1,3 +1,7 @@
+.contact .contact__container {
+  padding: 0 15px;
+}
+
 .contact .contact__container form {
   display: -webkit-box;
   display: -ms-flexbox;

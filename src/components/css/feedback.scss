@@ -1,10 +1,8 @@
 .feedback{
-    margin-top: 50px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 320px;
+    margin-top: 30px;
+    position: relative;
     .feedback__container{
-        padding: 10px 0;
+        padding: 10px 15px;
         .content{
             display: flex;
             flex-direction: column;
@@ -13,7 +11,7 @@
             text-align: center;
             background-color: rgb(79, 104, 245) !important;
             box-shadow: 0px 1px 4px grey;
-            margin: 30px 10px;
+            margin: 10px 10px;
             border-radius: 12px;
             padding: 20px;
             .icon{
@@ -29,6 +27,30 @@
                 color: rgb(231, 227, 209);
                 line-height: 1.5em;
             }
+        }
+    }
+}
+.feedback__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        margin: 0 30px;
+        button{
+            width: 100%;
+            cursor: pointer;
+        }
+        .prev{
+            border: 1px solid #df4163;
+        }
+        .next{
+            background-color: #df4163;
+            color: #fff;
         }
     }
 }

@@ -1,12 +1,10 @@
 .feedback {
-  margin-top: 50px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 320px;
+  margin-top: 30px;
+  position: relative;
 }
 
 .feedback .feedback__container {
-  padding: 10px 0;
+  padding: 10px 15px;
 }
 
 .feedback .feedback__container .content {
@@ -27,7 +25,7 @@
   background-color: #4f68f5 !important;
   -webkit-box-shadow: 0px 1px 4px grey;
           box-shadow: 0px 1px 4px grey;
-  margin: 30px 10px;
+  margin: 10px 10px;
   border-radius: 12px;
   padding: 20px;
 }
@@ -46,5 +44,45 @@
 .feedback .feedback__container .content p {
   color: #e7e3d1;
   line-height: 1.5em;
+}
+
+.feedback__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feedback__btn .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  margin: 0 30px;
+}
+
+.feedback__btn .btn button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.feedback__btn .btn .prev {
+  border: 1px solid #df4163;
+}
+
+.feedback__btn .btn .next {
+  background-color: #df4163;
+  color: #fff;
 }
 /*# sourceMappingURL=feedback.css.map */

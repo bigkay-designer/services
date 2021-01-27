@@ -2,6 +2,10 @@
   margin: 20px 0;
 }
 
+.services .services__container {
+  padding: 0 15px;
+}
+
 .services .services__container .title {
   text-align: center;
 }
