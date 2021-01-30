@@ -26,15 +26,12 @@ function FeedBack() {
         <div className="feedback__main">
             <div className="feedback" id="feedback">
                 <div className="feedback__container">
-                    {
-                        // currentCard.map(cards => (
-                            <div className="content">
-                                <EmojiEmotions className="icon" />
-                                <h2>{currentCard[count].name}</h2>
-                                <p>{currentCard[count].para}</p>
-                            </div>
-                        // ))
-                    }
+                    <div className="content">
+                        <EmojiEmotions className="icon" />
+                        <h2>{currentCard[count].name}</h2>
+                        <p>{currentCard[count].para}</p>
+                    </div>
+          
                 </div>
             </div>
             <div className="feedback__btn">

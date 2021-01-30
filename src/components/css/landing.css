@@ -1,9 +1,10 @@
-.title__feedback {
+.title__landing {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 40px 0 20px;
 }
 
-.title__feedback h2 {
-  font-size: 46px;
+.title__landing h2 {
+  color: #2c2c5f;
+  font-size: 36px;
 }
 /*# sourceMappingURL=landing.css.map */

@@ -11,7 +11,8 @@
 }
 
 .services .services__container .title h2 {
-  color: ivory;
+  color: #2c2c5f;
+  text-shadow: 0px 2px 20px #fff;
 }
 
 .services .services__container .services__body .content {
@@ -49,5 +50,35 @@
 .services .services__container .services__body :hover {
   background-color: #df4163;
   color: #fff !important;
+}
+
+@media screen and (min-width: 760px) {
+  .services .services__container {
+    margin-top: 100px;
+  }
+  .services .services__container .services__body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .services .services__container {
+    width: 70%;
+    margin: auto;
+  }
+  .services .services__container .title {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .services .services__container .services__body {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=services.css.map */

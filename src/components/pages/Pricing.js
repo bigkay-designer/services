@@ -5,8 +5,10 @@ import Contact from './Contact'
 import '../css/pricing.css'
 function Pricing() {
     const [openForm, setOpenForm] = useState(false)
-
+    const [currentPackage, setCurrentPachage] = useState("")
     const openFormHandler = (e) =>{
+        e.preventDefault()
+        setCurrentPachage (e.currentTarget.parentElement.firstChild.firstChild.innerHTML)
         setOpenForm(true)
     }
     return (
@@ -17,10 +19,10 @@ function Pricing() {
                     <div onClick={()=> setOpenForm(false)} className="close">
                         <Close className="icon" />
                     </div>
-                    <Contact />
-                </div>
-                <div className="title">
-                    <h2>Affordable pricing plan for all customers</h2>
+                    <div className="title">
+                        <h2>{currentPackage}</h2>
+                    </div>
+                    <Contact option={openForm} />
                 </div>
                 <div className="content">
                     <div className="title">

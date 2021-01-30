@@ -1,6 +1,15 @@
 .contact{
+    .main__contact{
+        background: linear-gradient(
+            to right,
+            rgba(235, 235, 235, 0.3),
+            rgba(201, 200, 200, 0.4),
+            rgba(235, 235, 235, 0.5),
+        ) ;
+    }
     .contact__container{
-        padding: 0 15px;
+        padding: 10px 15px;
+
         form{
             display: flex;
             flex-direction: column;
@@ -8,6 +17,14 @@
             align-items: flex-start;
             padding: 0 10px;
             margin-bottom: 20px;
+            // media query
+            @media screen and (min-width: 760px){
+                display: grid;   
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                grid-gap: 20px;
+
+            }
             .input__divs{
                 width: 100%;
                 display: flex;
@@ -15,6 +32,11 @@
                 align-items: center;
                 margin-top: 15px;
                 input{
+                    width: 100%;
+                    padding: 15px 7px;
+                    margin-left: 10px;
+                }
+                select{
                     width: 100%;
                     padding: 15px 7px;
                     margin-left: 10px;
@@ -27,6 +49,18 @@
                     cursor: pointer;
                 }
             }
+            .hide__select{display: none;}
+            .show__select{display: flex;}
+            .hide__service__select{display: none;}
+        }
+    }
+}
+
+@media screen and (min-width: 1060px){
+    .contact{
+        .contact__container{
+            width: 70%;
+            margin: auto;
         }
     }
 }

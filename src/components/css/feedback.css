@@ -7,6 +7,13 @@
   padding: 10px 15px;
 }
 
+@media screen and (min-width: 760px) {
+  .feedback .feedback__container {
+    max-width: 600px;
+    margin: auto;
+  }
+}
+
 .feedback .feedback__container .content {
   display: -webkit-box;
   display: -ms-flexbox;

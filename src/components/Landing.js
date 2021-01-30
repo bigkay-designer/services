@@ -15,12 +15,23 @@ function Landing() {
             <ShowCase />
             <Services />
             <OtherServices />
-            <div className="title__feedback">
+
+            <div className="title__landing">
                 <h2>Testimonials</h2>
             </div>
             <FeedBack />
+
+            <div className="title__landing">
+                <h2>Affordable pricing plan for all customers</h2>
+            </div>
             <Pricing />
-            <Contact />
+
+            <div className="title__landing">
+                <h2>Contact us</h2>
+            </div>
+            <div id="contact__id">
+                <Contact />
+            </div>
             <Footer />
         </div>
     )

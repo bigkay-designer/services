@@ -27,7 +27,7 @@ function Footer() {
                     <Facebook />
                 </div>
             </div>
-            <div class="copyright">
+            <div className="copyright">
                 <p>copyright ©2021 bkdesigner </p>
             </div>
             </div>

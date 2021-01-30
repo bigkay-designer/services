@@ -6,16 +6,13 @@
 .otherServices .otherServices__bg {
   background-color: white;
   width: 100%;
+  height: 100%;
   padding: 10px 0 0;
 }
 
-.otherServices .otherServices__bg .img {
-  background-image: url("../images/vector_ser.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.otherServices .otherServices__bg .img img {
   width: 100%;
-  height: 420px;
+  height: auto;
 }
 
 .otherServices .content {
@@ -48,5 +45,66 @@
 .otherServices .content .content__body ul li {
   padding: 5px 0px 10px;
   line-height: 1.4em;
+}
+
+@media screen and (min-width: 1060px) {
+  .otherServices {
+    position: relative;
+  }
+  .otherServices .bg__div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+    width: 100%;
+    height: 70vh;
+    background: radial-gradient(ellipse at bottom, #a07788 0, rgba(70, 31, 243, 0.7) 100%);
+  }
+  .otherServices .otherservices__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "con img";
+  }
+  .otherServices .otherServices__bg {
+    background-color: inherit;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  .otherServices .content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: con;
+    background-color: inherit;
+    -webkit-clip-path: none;
+            clip-path: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .otherServices .content .content__body {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .otherServices .content .content__body h2 {
+    text-align: left;
+  }
+  .otherServices .content .content__body ul {
+    max-width: 70%;
+  }
 }
 /*# sourceMappingURL=otherServices.css.map */

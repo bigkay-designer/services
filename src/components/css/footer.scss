@@ -8,7 +8,7 @@
           ul{
               padding: 0;
               display: flex;
-              justify-content: space-between;
+              justify-content: space-evenly;
               align-items: center;
               color: rgb(235, 235, 235);
               .ul__div{
@@ -55,7 +55,7 @@
           }
           .icons{
               display: flex;
-              justify-content: space-around;
+              justify-content: space-evenly;
               align-items: center;
               margin: 15px 50px 10px;
           }

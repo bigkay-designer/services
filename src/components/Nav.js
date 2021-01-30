@@ -25,27 +25,50 @@ const Nav = () => {
     }
     scrollPositionHandler()
 
+    // const onScrollDownHandler = (e) =>{
+    //     let scrollBefore = 0;
+
+    //     window.addEventListener('scroll',function(e){
+    //         const scrolled = window.scrollY;
+        
+    //         if(scrollBefore > scrolled){
+    //             console.log("ScrollUP");
+    //             scrollBefore = scrolled;
+    //             //Desired action
+    //             setNavScroll(true)
+    //         }else{
+    //             scrollBefore = scrolled;
+    //             console.log("ScrollDOWN");
+    //             //Desired action
+    //             setNavScroll(false)
+    //         }
+        
+    //     })
+    // }
+
+    // onScrollDownHandler()
+
     return (
         <div className={`nav ${navScroll && "nav__scroll"}`} id="nav">
             <div onClick={()=> setOpenMenu(false)} className={`${openMenu && "nav__overlay"}`}></div>
             <div onClick={()=> setOpenMenu(true)} className={`nav__small ${openMenu && "hideMenu"}`}>
-                <Menu className="menu__icon" />
+                <Menu className={`menu__icon ${navScroll && "scroll__color"}`} />
             </div>
             <div className={`nav__container `}>
                 <div className="nav__logo">
-                    <h2>BK design</h2>
+                    <h2 className={`${navScroll && "scroll__color"}`}>BK design</h2>
                 </div>
                 <nav className={`nav__links ${openMenu && "display__nav"} `}>
                     <div onClick={()=> setOpenMenu(false)} className="nav__close">
                         <Close className="nav__icon" />
                     </div>
                     <div className="links">
-                        <ul>
+                        <ul className={`${navScroll && "scroll__color"}`}>
                            <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>home </li></Link> </div>
                            <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>services </li></Link> </div>
                            <div className="ul__div " > <Feedback className="ul__icon" /> <Link to="feedback" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>testimonials </li></Link> </div>
                            <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>prices </li></Link> </div>
-                           <div className="ul__div " > <ContactPhone className="ul__icon" /> <Link to="contact" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>contact us</li></Link> </div>
+                           <div className="ul__div " > <ContactPhone className="ul__icon" /> <Link to="contact__id" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>contact us</li></Link> </div>
                         </ul>
                         <div className="btn">
                             <Button className="btn__icon">Get A Quote</Button>

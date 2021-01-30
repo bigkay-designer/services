@@ -1,5 +1,5 @@
 .prices{
-    margin: 50px 0;
+    margin:20px 0 40px;
     .overlay{
         position: fixed;
         top: 0;
@@ -20,7 +20,7 @@
             background-color: rgb(255, 255, 255);
             box-shadow: 0px 4px 12px grey;
             border-radius: 20px;
-            width: 300px;
+            width: 90%;
             padding: 30px 10px;
             z-index: 200;
             .close{
@@ -29,16 +29,16 @@
                     font-size: 26px;
                 }
             }
+            .title{
+                text-align: center;
+                h2{
+                    font-style: italic;
+                    text-decoration: underline;
+                }
+            }
         }
         .hide__form{
             display: none;
-        }
-        .title{
-            text-align: center;
-            h2{
-                color: rgb(44, 44, 95);
-                font-weight: 700;
-            }
         }
         .full__package{
             background-color: rgb(79, 104, 245) !important;
@@ -96,6 +96,7 @@
                 border-radius: 30px;
                 box-shadow: 0px 2px 4px rgba(252, 231, 204, 0.4);
                 margin: 10px 0;
+                cursor: pointer;
                 button{
                     color: #fff;
                     font-size: 20px;
@@ -109,4 +110,36 @@
             }
         }
     }
+}
+
+
+// media queries
+@media screen and (min-width:760px){
+    .prices{
+        .prices__container{
+            max-width: 70%;
+            margin: auto;
+        }
+    }
+}
+
+
+@media screen and (min-width:1060px){
+ .prices{
+     .prices__container{
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: auto;
+         grid-gap: 20px;
+         width: 85%;
+         margin: auto;
+         .modal__form{
+             max-width: 65%;
+             margin: auto;
+         }
+         .full__package{
+             transform: scale(1);
+         }
+     }
+ }   
 }

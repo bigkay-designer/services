@@ -1,9 +1,11 @@
+.scroll__color{
+    color: rgb(40, 34, 65) !important;
+}
 .nav__scroll{
     position: sticky;
     top: 0;
     left: 0;
-    background: radial-gradient(ellipse at bottom,rgba(90, 55, 248, 0.7) 0,rgb(85, 13, 253) 100%);
-
+    background-color: #fff;
 }
 .nav{
     padding: 20px;
@@ -32,9 +34,11 @@
        z-index: 100;
    }
    .nav__container{
+       
        .nav__logo{
            width: 70%;
            h2{
+               font-size: 26px;
                color: cornsilk;
            }
         }
@@ -96,4 +100,67 @@
             }
        }
    }
+}
+
+// media query
+
+@media screen and (min-width: 860px){
+    .nav{
+        .nav__small{
+            display: none;
+        }
+        .nav__container{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: auto;
+            .nav__links{
+                display: inline-block;
+                position: relative;
+                background: none;
+                box-shadow: none;
+                width: 100%;
+                height: auto;
+                padding: 0;
+                .nav__close{display: none;}
+                .links{
+                    position: relative;
+                    padding: 0;
+                    width: 100%;
+                    ul{
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        color: #fff;
+                        .ul__div{
+                            padding: 5px;
+                            border: none;
+                        }
+                        .ul__icon{
+                            color: rgb(255, 196, 147);
+                        }
+                        li{
+                            padding: 0 6px;
+                            color: inherit;
+                        }
+                    }
+                    .btn{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1260px){
+    .nav__container{
+        max-width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:1360px){
+    .nav__container{
+        max-width: 70%;
+        margin: auto;
+    }
 }

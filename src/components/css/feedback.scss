@@ -3,6 +3,11 @@
     position: relative;
     .feedback__container{
         padding: 10px 15px;
+        // media query
+        @media screen and (min-width: 760px){
+            max-width: 600px;
+            margin: auto;
+        }
         .content{
             display: flex;
             flex-direction: column;
