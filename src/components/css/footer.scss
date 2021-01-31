@@ -44,9 +44,11 @@
               padding: 0;
               color: rgb(235, 235, 235);
               display: flex;
-              justify-content: space-around;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
               align-items: center;
               .ul__div{
+                  flex: 50%;
                   display: flex;
                   justify-content: center;
                   align-items: center;
@@ -97,6 +99,18 @@
               margin: 15px 50px 10px;
               div{
                   padding-left: 15px;
+                  svg{
+                      font-size: 32px;
+                  }
+              }
+              .fb{
+                  color:#3b5998;
+              }
+              .ig{
+                  color:  #bc2a8d;
+              }
+              .lk{
+                  color: #0e76a8;
               }
           }
       }

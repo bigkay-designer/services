@@ -11,10 +11,15 @@ import Contact from './pages/Contact'
 import Footer from './pages/Footer'
 import './css/landing.css'
 function Landing() {
+    
     return (
         <div className="landing" id="landing">
             <Nav />
             <ShowCase />
+
+            <div className="title__landing">
+                <h2>Our services include</h2>
+            </div>
             <Services />
 
             <div className="title__landing">

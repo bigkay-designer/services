@@ -61,14 +61,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .footer .footer__container .links ul .ul__div {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,6 +161,22 @@
 
 .footer .footer__container .socials .icons div {
   padding-left: 15px;
+}
+
+.footer .footer__container .socials .icons div svg {
+  font-size: 32px;
+}
+
+.footer .footer__container .socials .icons .fb {
+  color: #3b5998;
+}
+
+.footer .footer__container .socials .icons .ig {
+  color: #bc2a8d;
+}
+
+.footer .footer__container .socials .icons .lk {
+  color: #0e76a8;
 }
 
 .footer .footer__container .copyright {

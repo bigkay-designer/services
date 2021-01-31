@@ -1,11 +1,11 @@
 .scroll__color{
-    color: rgb(40, 34, 65) !important;
+    color: #05E5C8 !important;
 }
 .nav__scroll{
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #203030;
 }
 .nav{
     padding: 20px;
@@ -139,6 +139,7 @@
                             color: rgb(255, 196, 147);
                         }
                         li{
+                            padding: 0;
                             margin: 0 8px;
                             color: inherit;
                             &:hover{
@@ -159,12 +160,6 @@
 @media screen and (min-width:1260px){
     .nav__container{
         max-width: 80%;
-        margin: auto;
-    }
-}
-@media screen and (min-width:1360px){
-    .nav__container{
-        max-width: 70%;
         margin: auto;
     }
 }

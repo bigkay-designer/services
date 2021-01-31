@@ -4,8 +4,9 @@
     padding: 0 4px;
     margin: 40px 0 20px;
     h2{
-        color: rgb(44, 44, 95);
+        color:#027263;
         font-size: 32px;
+        font-weight: 900;
     }
     .icons__div{
         .icon{
@@ -14,16 +15,16 @@
     }
 }
 
-@media screen and (min-width:1260px){
-    .wrap{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        width: 85%;
-        margin: auto;
-        grid-gap: 30px;
-        outline: 1px solid black;
-        padding: 10px 0 30px;
-        box-shadow: 0px 3px 10px gray;
-        background-color: rgba(243, 243, 243, 0.3);
-    }
-}
+// @media screen and (min-width:1260px){
+//     .wrap{
+//         display: grid;
+//         grid-template-columns: 30% 70%;
+//         width: 85%;
+//         margin: auto;
+//         grid-gap: 30px;
+//         outline: 1px solid black;
+//         padding: 10px 0 30px;
+//         box-shadow: 0px 3px 10px gray;
+//         background-color: rgba(243, 243, 243, 0.3);
+//     }
+// }

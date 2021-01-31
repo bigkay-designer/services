@@ -8,7 +8,11 @@ function Showcase() {
             <div className="showCase__bg"></div>
             <div className="showCase__container">
                 <div className="title">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia veritatis aspernatur delectus eum tenetur saepe nemo culpa aliquid quia.</p>
+                    <p className="question__para">want to transfer your business and gain customers?</p>
+                    
+                    <p>Well at BKDesign we turn ideas into great digital solutions. We Specialise in <span> Creative and Affordable web design</span></p>
+
+                    <p className="sub__para">Web Design, Web Development, UX,UI & Branding.</p>
                     <div className="btn">
                         <Button className="btn__icon">Get A Quote</Button>
                     </div>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {Link} from 'react-scroll'
-import {Menu, Close, Home, ContactPhone, SettingsApplications, LocalOffer, Feedback, ChildFriendlyTwoTone} from '@material-ui/icons'
+import {Menu, Close, Home, ContactPhone, SettingsApplications, LocalOffer, Feedback, LibraryBooks} from '@material-ui/icons'
 import {Button} from '@material-ui/core'
 
 import './css/nav.css'
@@ -25,29 +25,6 @@ const Nav = () => {
     }
     scrollPositionHandler()
 
-    // const onScrollDownHandler = (e) =>{
-    //     let scrollBefore = 0;
-
-    //     window.addEventListener('scroll',function(e){
-    //         const scrolled = window.scrollY;
-        
-    //         if(scrollBefore > scrolled){
-    //             console.log("ScrollUP");
-    //             scrollBefore = scrolled;
-    //             //Desired action
-    //             setNavScroll(true)
-    //         }else{
-    //             scrollBefore = scrolled;
-    //             console.log("ScrollDOWN");
-    //             //Desired action
-    //             setNavScroll(false)
-    //         }
-        
-    //     })
-    // }
-
-    // onScrollDownHandler()
-
     return (
         <div className={`nav ${navScroll && "nav__scroll"}`} id="nav">
             <div onClick={()=> setOpenMenu(false)} className={`${openMenu && "nav__overlay"}`}></div>
@@ -66,6 +43,7 @@ const Nav = () => {
                         <ul className={`${navScroll && "scroll__color"}`}>
                            <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>home </li></Link> </div>
                            <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>services </li></Link> </div>
+                           <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>project </li></Link> </div>
                            <div className="ul__div " > <Feedback className="ul__icon" /> <Link to="feedback" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>testimonials </li></Link> </div>
                            <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>prices </li></Link> </div>
                            <div className="ul__div " > <ContactPhone className="ul__icon" /> <Link to="contact__id" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>contact us</li></Link> </div>

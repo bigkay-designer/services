@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button} from '@material-ui/core'
 import {Link} from 'react-scroll'
-import {Home, SettingsApplications, LocalOffer, LocationOn, Phone, } from '@material-ui/icons'
+import {Home, SettingsApplications, LocalOffer, LocationOn, Phone, LibraryBooks} from '@material-ui/icons'
 import {LinkedIn, Email, Instagram, Facebook} from '@material-ui/icons'
 import '../css/footer.css'
 function Footer() {
@@ -27,6 +27,7 @@ function Footer() {
                     <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000}><li >home </li></Link> </div>
                     <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000}><li >services </li></Link> </div>
                     <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000}><li >prices </li></Link> </div>
+                    <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000}><li >projects </li></Link> </div>
                 </ul>
                 </div>
                 <div className="contact__info">
@@ -37,9 +38,9 @@ function Footer() {
                 <div className="socials">
                     <h3>Follow us</h3>
                     <div className="icons">
-                        <div><LinkedIn className="icon" /> </div>
-                        <div><Instagram className="icon" /> </div>
-                        <div><Facebook className="icon" /> </div>
+                        <div><LinkedIn className="icon lk" /> </div>
+                        <div><Instagram className="icon ig" /> </div>
+                        <div><Facebook className="icon fb" /> </div>
                     </div>
                 </div>
             </div>

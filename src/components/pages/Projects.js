@@ -3,7 +3,7 @@ import React from 'react'
 import '../css/project.css'
 function Projects() {
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <div className="projects__container">
                 <div className="content">
                     <img src="https://blog.hubspot.com/hs-fs/hubfs/landing-page-no-navigation.jpg?width=690&name=landing-page-no-navigation.jpg" alt=""/>

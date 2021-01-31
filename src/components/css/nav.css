@@ -1,5 +1,5 @@
 .scroll__color {
-  color: #282241 !important;
+  color: #05E5C8 !important;
 }
 
 .nav__scroll {
@@ -7,7 +7,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: #203030;
 }
 
 .nav {
@@ -175,6 +175,7 @@
     color: #ffc493;
   }
   .nav .nav__container .nav__links .links ul li {
+    padding: 0;
     margin: 0 8px;
     color: inherit;
   }
@@ -190,13 +191,6 @@
 @media screen and (min-width: 1260px) {
   .nav__container {
     max-width: 80%;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 1360px) {
-  .nav__container {
-    max-width: 70%;
     margin: auto;
   }
 }

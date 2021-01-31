@@ -1,14 +1,19 @@
 .feedback{
     margin-top: 30px;
+    max-width: 95%;
     position: relative;
+    height: 350px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     .feedback__container{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
         padding: 10px 15px;
-        // media query
-        @media screen and (min-width: 760px){
-            max-width: 600px;
-            margin: auto;
-        }
         .content{
+            flex: 1;
+            min-width: 240px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -60,6 +65,15 @@
     }
 }
 
-@media screen and (min-width:860px){
-    
+@media screen and (min-width:1060px){
+    .feedback{
+        width: 70%;
+        margin: auto;
+        .feedback__container{
+            box-shadow: 0px 1px 4px grey;
+            .content{
+                min-width: 300px;
+            }
+        }
+    }
 }

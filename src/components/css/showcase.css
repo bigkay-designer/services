@@ -10,30 +10,50 @@
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
   width: 100%;
-  height: 70vh;
-  background: radial-gradient(ellipse at bottom, #a193bb 0, #461ff3 100%);
+  height: 80vh;
+  background: radial-gradient(ellipse at bottom, #354747 0, #2d3b3b 100%);
 }
 
 .showCase .showCase__container .title {
-  text-align: center;
+  text-align: left;
   width: 100%;
   padding: 0 10px;
 }
 
+.showCase .showCase__container .title .question__para {
+  color: #05E5C8;
+  text-transform: capitalize;
+  margin: 10px 0 15px;
+  font-weight: 800;
+  font-size: 32px;
+  text-align: center;
+}
+
 .showCase .showCase__container .title p {
-  text-shadow: 0px 1px 3px #000;
-  font-size: 26px;
+  text-shadow: 0px 1px 3px #5c5a5a;
+  font-size: 22px;
   color: #fff;
   line-height: 1.3em;
+  margin-bottom: 10px;
+}
+
+.showCase .showCase__container .title p span {
+  color: #05E5C8;
+  font-weight: 700;
+}
+
+.showCase .showCase__container .title .sub__para {
+  font-size: 16px;
+  color: #e7e7e7;
 }
 
 .showCase .showCase__container .title .btn {
   text-align: center;
   margin-top: 20px;
-  cursor: pointer;
 }
 
 .showCase .showCase__container .title .btn .btn__icon {
+  cursor: pointer;
   padding-left: 30px;
   padding-right: 30px;
   background-color: chocolate;
@@ -41,7 +61,7 @@
 }
 
 .showCase .showCase__container .showCase__img {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .showCase .showCase__container .showCase__img img {
@@ -51,7 +71,7 @@
 
 @media screen and (max-width: 390px) {
   .showCase .showCase__bg {
-    height: 100vh !important;
+    height: 110vh !important;
   }
 }
 
@@ -73,7 +93,7 @@
   .showCase .showCase__bg {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
             clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
-    height: 60vh;
+    height: 65vh;
   }
   .showCase .showCase__container {
     display: -ms-grid;
@@ -85,8 +105,9 @@
     width: 100%;
     margin: 20px 0 0;
     padding: 20px 20px 20px 120px;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+  }
+  .showCase .showCase__container .title .question__para {
+    text-align: left;
   }
   .showCase .showCase__container .title p {
     text-align: left;
@@ -101,7 +122,7 @@
 
 @media screen and (min-width: 1280px) {
   .showCase .showCase__bg {
-    height: 50vh;
+    height: 60vh;
   }
 }
 /*# sourceMappingURL=showcase.css.map */
