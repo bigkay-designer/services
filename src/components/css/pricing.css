@@ -162,8 +162,7 @@
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     grid-gap: 20px;
-    width: 85%;
-    margin: auto;
+    max-width: 100%;
   }
   .prices .prices__container .modal__form {
     max-width: 65%;
@@ -172,6 +171,16 @@
   .prices .prices__container .full__package {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .prices .prices__container {
+    max-width: 80%;
+  }
+  .prices .prices__container .modal__form {
+    max-width: 45%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=pricing.css.map */

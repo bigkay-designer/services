@@ -11,7 +11,7 @@
           clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
   width: 100%;
   height: 70vh;
-  background: radial-gradient(ellipse at bottom, #230658 0, #461ff3 100%);
+  background: radial-gradient(ellipse at bottom, #a193bb 0, #461ff3 100%);
 }
 
 .showCase .showCase__container .title {

@@ -175,8 +175,12 @@
     color: #ffc493;
   }
   .nav .nav__container .nav__links .links ul li {
-    padding: 0 6px;
+    margin: 0 8px;
     color: inherit;
+  }
+  .nav .nav__container .nav__links .links ul li:hover {
+    color: #06ac96;
+    outline: 1px solid green;
   }
   .nav .nav__container .nav__links .links .btn {
     display: none;

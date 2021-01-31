@@ -1,0 +1,44 @@
+.projects{
+    .projects__container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 5px;
+        .content{
+            flex: 100%;
+            max-width: 100%;
+            padding: 10px;
+            img{
+                border-radius: 20px;
+                vertical-align: middle;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 860px){
+    .projects{
+        .projects__container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+            .content{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1260px){
+    .projects{
+        .projects__container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 5px;
+            .content{
+                flex: 25%;
+                max-width: 25%;
+            }
+        }
+    }
+}

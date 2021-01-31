@@ -1,25 +1,38 @@
 import React from 'react'
+import {Phone, HourglassEmpty, AssignmentTurnedIn, DynamicFeed} from '@material-ui/icons'
 import image from '../images/vector_ser.png'
 import '../css/otherServices.css'
 function otherServices() {
     return (
         <div className="otherServices">
-            <div className="otherservices__container">
                 <div className="bg__div"></div>
-                <div className="otherServices__bg">
-                    <div className="img">
-                        <img src={image} alt="img"/>
+            <div className="otherservices__container">
+                <div className="content">
+                    <Phone className="icon" />
+                    <div className="content__body">
+                        <h2>Wire frame</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum iste eos veniam aut mollitia.</p>
                     </div>
                 </div>
                 <div className="content">
+                    <HourglassEmpty className="icon" />
                     <div className="content__body">
-                        <h2>Lorem ipsum dolor sit amet.</h2>
-                        <ul>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iste?</li>
-                        </ul>
+                        <h2>web desing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum iste eos veniam aut mollitia.</p>
+                    </div>
+                </div>
+                <div className="content">
+                    <AssignmentTurnedIn className="icon" />
+                    <div className="content__body">
+                        <h2>development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum iste eos veniam aut mollitia.</p>
+                    </div>
+                </div>
+                <div className="content">
+                    <DynamicFeed className="icon" />
+                    <div className="content__body">
+                        <h2>final delivery</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illum iste eos veniam aut mollitia.</p>
                     </div>
                 </div>
             </div>

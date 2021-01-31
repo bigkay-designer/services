@@ -3,5 +3,6 @@
     box-sizing: border-box;
 }
 body{
+    background-color: rgba(240, 240, 240, 0.4);
  --mainHeader-Color : rgb(37, 39, 63);
 }

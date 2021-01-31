@@ -131,8 +131,7 @@
          grid-template-columns: repeat(3, 1fr);
          grid-template-rows: auto;
          grid-gap: 20px;
-         width: 85%;
-         margin: auto;
+         max-width: 100% ;
          .modal__form{
              max-width: 65%;
              margin: auto;
@@ -142,4 +141,16 @@
          }
      }
  }   
+}
+
+@media screen and (min-width: 1300px){
+    .prices{
+        .prices__container{
+            max-width: 80%;
+            .modal__form{
+                max-width: 45%;
+                margin: auto;
+            }
+        }
+    }
 }

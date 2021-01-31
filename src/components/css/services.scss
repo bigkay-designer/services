@@ -14,7 +14,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                background-color: #fff;
+                background-color: rgba(240, 240, 240, 0.7);
                 box-shadow: 0px 1px 4px grey;
                 padding:20px;
                 margin: 25px 10px;
@@ -48,8 +48,6 @@
             .services__body{
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                .content{
-                }
             }
         }
     }
@@ -64,9 +62,6 @@
             .title{
                 max-width: 60%;
                 margin: auto;
-            }
-            .services__body{
-                // grid-template-columns: repeat(3, 1fr)
             }
         }
     }

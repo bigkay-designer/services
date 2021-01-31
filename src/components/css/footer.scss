@@ -1,26 +1,65 @@
 .footer{
   margin-top: 50px;
+  .news__letter{
+      background-color: #2d3b3b;
+      .news__letter__container {
+          width: 70%;
+          margin: auto;
+          padding: 20px 0;
+          .title{
+              text-align: left;
+              h2{
+                  color: #fff;
+                  span{
+                      color: #05E5C8;
+                  }
+              }
+              p{
+                  color: rgb(201, 199, 199);
+                  padding: 7px 0;
+              }
+          }
+          form{
+              margin: 10px 0;
+              input{
+                  width: 100%;
+                  padding: 10px;
+                  outline-color: #05E5C8;
+              }
+              button{
+                background-color: #05E5C8;
+                width: 100%;
+                margin: 10px 0;
+              }
+          }
+      }
+  }
   .footer__container{
       background-color: #141b1b;
+      width: 100%;
       .links{
           padding: 10px 10px 0;
           margin-bottom: 20px;
           ul{
               padding: 0;
-              display: flex;
-              justify-content: space-evenly;
-              align-items: center;
               color: rgb(235, 235, 235);
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
               .ul__div{
                   display: flex;
                   justify-content: center;
                   align-items: center;
+                  margin: 15px 0;
               }
               li{
                   
                   text-transform: capitalize;
                   padding-left: 5px;
                   list-style: none;
+              }
+              .ul__icon{
+                color: #05E5C8;
               }
           }
       }
@@ -29,8 +68,6 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          border-bottom: 1px solid rgba(129, 127, 127, 0.3);
-          border-radius: 10px;
           padding-bottom: 15px;
           .contact__info__div{
               display: flex;
@@ -38,8 +75,8 @@
               align-items: center;
               margin: 5px 0;
               .icons{
-                  color: rgb(214, 214, 214);
-              }
+                color: #05E5C8;
+            }
               p{
                 cursor: pointer;
                 color: rgb(235, 235, 235);
@@ -55,9 +92,12 @@
           }
           .icons{
               display: flex;
-              justify-content: space-evenly;
+              justify-content: space-between;
               align-items: center;
               margin: 15px 50px 10px;
+              div{
+                  padding-left: 15px;
+              }
           }
       }
       .copyright{
@@ -65,8 +105,61 @@
           padding: 10px 0;
           text-align: center;
           p{
+            font-size: 14px;
             color: rgb(189, 189, 189);
           }
       }
   }
+}
+
+
+@media screen and (min-width: 760px){
+    .footer{
+        .footer__container{
+            .wrap__div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .links{
+                ul{
+                    display: block;
+                    .ul__div{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1060px){
+    .footer{
+        .news__letter{
+            .news__letter__container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                form{
+                    width: 40%;
+                }
+            }
+        }
+        .footer__container{
+            .wrap__div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 70%;
+                margin: auto;
+            }
+            .links{
+                ul{
+                    display: block;
+                    .ul__div{
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -139,8 +139,12 @@
                             color: rgb(255, 196, 147);
                         }
                         li{
-                            padding: 0 6px;
+                            margin: 0 8px;
                             color: inherit;
+                            &:hover{
+                                color:#06ac96 ;
+                                outline: 1px solid green;
+                            }
                         }
                     }
                     .btn{
