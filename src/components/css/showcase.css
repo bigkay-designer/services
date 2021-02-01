@@ -1,5 +1,6 @@
 .showCase {
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .showCase .showCase__bg {
@@ -26,7 +27,7 @@
   margin: 10px 0 15px;
   font-weight: 800;
   font-size: 32px;
-  text-align: center;
+  text-align: left;
 }
 
 .showCase .showCase__container .title p {
@@ -69,7 +70,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 360px) {
   .showCase .showCase__bg {
     height: 110vh !important;
   }
@@ -89,7 +90,7 @@
   }
 }
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1090px) {
   .showCase .showCase__bg {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
             clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);

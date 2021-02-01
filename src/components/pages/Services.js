@@ -36,11 +36,11 @@ function Services() {
                 </div>
             </div>
             <div className="services__btn">
-                <div onClick={() => scrollLeftHandler(-600)} className="btn">
+                <div onClick={() => scrollLeftHandler(-280)} className="btn">
                     <NavigateBefore />
                     <Button className="prev">prev</Button>
                 </div>
-                <div onClick={() => scrollRightHandler(600)} className="btn">
+                <div onClick={() => scrollRightHandler(280)} className="btn">
                     <Button id="test" className="next">next</Button>
                     <NavigateNext />
                 </div>

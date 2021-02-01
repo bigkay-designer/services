@@ -37,14 +37,13 @@
   margin: 10px 0 0;
   padding: 10px 0;
   color: #1d1c1c;
+  line-height: 1.5em;
 }
 
 .otherServices .otherservices__container .content:hover {
   background-color: rgba(238, 238, 238, 0.3);
   border: 1px solid #adacac;
   border-radius: 12px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 @media screen and (min-width: 680px) {
@@ -63,19 +62,25 @@
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 20px;
+  }
+  .otherServices .otherservices__container .content:hover {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
 @media screen and (min-width: 1360px) {
   .otherServices {
-    width: 70%;
+    width: 80%;
   }
   .otherServices .otherservices__container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=otherServices.css.map */

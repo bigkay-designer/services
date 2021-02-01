@@ -3,10 +3,29 @@
 }
 
 .services .services__container {
-  padding: 0 15px;
+  position: relative;
+  max-width: 100%;
+  height: 680px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.services .services__container .services__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
 }
 
 .services .services__container .services__body .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,29 +65,54 @@
 }
 
 .services .services__btn {
-  display: none;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0 100px;
 }
 
-@media screen and (min-width: 760px) {
-  .services .services__container {
-    margin-top: 100px;
-  }
-  .services .services__container .services__body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
+.services .services__btn .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  margin: 0 30px;
 }
 
-@media screen and (min-width: 1060px) {
+.services .services__btn .btn button {
+  width: 100%;
+  cursor: pointer;
+}
+
+.services .services__btn .btn .prev {
+  border: 1px solid #df4163;
+}
+
+.services .services__btn .btn .next {
+  background-color: #df4163;
+  color: #fff;
+}
+
+@media screen and (min-width: 860px) {
   .services .services__container {
-    width: 85%;
+    width: 90%;
     margin: auto;
   }
 }
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 760px) {
   .services .services__container {
     position: relative;
     max-width: 100%;
@@ -90,47 +134,11 @@
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    min-width: 400px;
+    min-width: 260px;
   }
   .services .services__container .services__body .content:hover {
     border: 1px solid #adacac;
     border-radius: 12px;
-  }
-  .services__btn {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0px 0 100px;
-  }
-  .services__btn .btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 120px;
-    margin: 0 30px;
-  }
-  .services__btn .btn button {
-    width: 100%;
-    cursor: pointer;
-  }
-  .services__btn .btn .prev {
-    border: 1px solid #df4163;
-  }
-  .services__btn .btn .next {
-    background-color: #df4163;
-    color: #fff;
   }
 }
 /*# sourceMappingURL=services.css.map */

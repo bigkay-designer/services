@@ -43,8 +43,8 @@ const Nav = () => {
                         <ul className={`${navScroll && "scroll__color"}`}>
                            <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>home </li></Link> </div>
                            <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>services </li></Link> </div>
-                           <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>project </li></Link> </div>
-                           <div className="ul__div " > <Feedback className="ul__icon" /> <Link to="feedback" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>testimonials </li></Link> </div>
+                           <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>Portfolio </li></Link> </div>
+                           {/* <div className="ul__div " > <Feedback className="ul__icon" /> <Link to="feedback" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>testimonials </li></Link> </div> */}
                            <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>prices </li></Link> </div>
                            <div className="ul__div " > <ContactPhone className="ul__icon" /> <Link to="contact__id" smooth={true} duration={1000}><li onClick={()=> setOpenMenu(false)}>contact us</li></Link> </div>
                         </ul>

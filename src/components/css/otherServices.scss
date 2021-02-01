@@ -28,13 +28,13 @@
                     margin: 10px 0 0;
                     padding: 10px 0;
                     color: rgb(29, 28, 28);
+                    line-height: 1.5em;
                 }
             }
             &:hover{
                 background-color: rgba(238, 238, 238, 0.3);
                 border: 1px solid rgb(173, 172, 172);
                 border-radius: 12px;    
-                transform: scale(1.1);   
             }
         }
     }
@@ -53,7 +53,16 @@
         .otherservices__container{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
+            grid-gap: 20px;
+
+            .content{
+                &:hover{
+                    -webkit-transition: all .5s;
+                    -moz-transition: all .5s;
+                    transition: all .5s;
+                    transform: scale(1.1);   
+                }
+            }
         }
     }
 }
@@ -61,10 +70,10 @@
 
 @media screen and (min-width: 1360px){
     .otherServices{
-        width: 70%;
+        width: 80%;
         .otherservices__container{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }

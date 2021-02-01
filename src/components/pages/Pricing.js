@@ -26,18 +26,23 @@ function Pricing() {
                 </div>
                 <div className="content">
                     <div className="title">
-                        <h2>Custom Website</h2>
+                        <h2>Bespoke</h2>
                     </div>
                     <div className="price">
-                        <h2>£500</h2>
+                    <h2> <span className="money__sign">£</span><span className="amount">599</span></h2>
                     </div>
                     <div className="body">
                         <ul>
-                            <li>Lorem consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem  consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lor ectetur adipisicing elit. Quibusdam, fugit.</li>
+                            <li>responsive desing </li>
+                            <li>Bespoke 5 page Website Design</li>
+                            <li>1 Year Free Domain & Hosting (worth £65+)</li>
+                            <li>100% Ownership</li>
+                            <li className="grey__overlay">Free HTTPS encription</li>
+                            <li className="grey__overlay">Google My Business Set Up</li>
+                            <li className="grey__overlay">Website Copy Writing (Upto 4000 words)</li>
+                            <li className="grey__overlay">Google Maps</li>
+                            <li className="grey__overlay">Contact form </li>
+                            <li className="grey__overlay">payment gateway</li>
                         </ul>
                     </div>
                     <div onClick={openFormHandler} className="btn">
@@ -49,15 +54,20 @@ function Pricing() {
                         <h2>Full Package</h2>
                     </div>
                     <div className="price">
-                        <h2>£500</h2>
+                    <h2> <span className="money__sign">£</span><span className="amount">999</span></h2>
                     </div>
                     <div className="body">
                         <ul>
-                            <li>Lorem consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem  consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lor ectetur adipisicing elit. Quibusdam, fugit.</li>
+                            <li>responsive desing </li>
+                            <li>Bespoke unlimited page Website Design</li>
+                            <li>1 Year Free Domain & Hosting (worth £65+)</li>
+                            <li>100% Ownership</li>
+                            <li>Free HTTPS encription</li>
+                            <li className="grey__overlay">Google My Business Set Up</li>
+                            <li className="grey__overlay">Website Copy Writing (Upto 4000 words)</li>
+                            <li className="grey__overlay">Google Maps</li>
+                            <li >Contact form </li>
+                            <li className="grey__overlay">payment gateway</li>
                         </ul>
                     </div>
                     <div onClick={openFormHandler} className="btn">
@@ -69,15 +79,20 @@ function Pricing() {
                         <h2>E-commerce</h2>
                     </div>
                     <div className="price">
-                        <h2>£500</h2>
+                    <h2> <span className="money__sign">£</span><span className="amount">1200</span></h2>
                     </div>
                     <div className="body">
                         <ul>
-                            <li>Lorem consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lorem  consectetur adipisicing elit. Quibusdam, fugit.</li>
-                            <li>Lor ectetur adipisicing elit. Quibusdam, fugit.</li>
+                            <li>responsive desing </li>
+                            <li>Bespoke 5 page Website Design</li>
+                            <li>1 Year Free Domain & Hosting (worth £65+)</li>
+                            <li>100% Ownership</li>
+                            <li>Free HTTPS encription</li>
+                            <li>Google My Business Set Up</li>
+                            <li>Website Copy Writing (Upto 4000 words)</li>
+                            <li>Google Maps</li>
+                            <li>Contact form </li>
+                            <li>payment gateway</li>                        
                         </ul>
                     </div>
                     <div onClick={openFormHandler} className="btn">

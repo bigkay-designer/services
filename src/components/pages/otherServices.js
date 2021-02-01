@@ -9,7 +9,7 @@ function otherServices() {
             <div className="otherservices__container">
                     {
                         otherServicesJson.map(data => (
-                            <div className="content">
+                            <div className="content" key={data.title}>
                                 <div className="content__body">
                                     <img src={data.image} alt=""/>
                                     <h2>{data.title}</h2>

@@ -17,10 +17,10 @@ function FeedBack() {
                 <div className="feedback__container">
                     {
                         currentCard.map(card => (
-                            <div className="content">
+                            <div className="content" key={card.name}>
                                 <EmojiEmotions className="icon" />
                                 <h2>{card.name}</h2>
-                                <p>{card.para}</p>
+                                <q>{card.para}</q>
                             </div>
                         ))
 
