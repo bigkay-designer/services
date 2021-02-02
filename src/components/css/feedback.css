@@ -1,10 +1,15 @@
 .feedback {
-  margin-top: 30px;
   max-width: 95%;
+  margin: 0 auto;
   position: relative;
-  height: 480px;
-  overflow-x: hidden;
+  height: 340px;
+  overflow-x: scroll;
   scroll-behavior: smooth;
+}
+
+.feedback::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
 .feedback .feedback__container {
@@ -14,7 +19,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 15px;
 }
 
 .feedback .feedback__container .content {
@@ -100,6 +104,21 @@
   color: #fff;
 }
 
+@media screen and (max-width: 360px) {
+  .feedback {
+    width: 100%;
+    margin: auto;
+    height: 400px;
+  }
+  .feedback .feedback__container {
+    -webkit-box-shadow: 0px 1px 4px grey;
+            box-shadow: 0px 1px 4px grey;
+  }
+  .feedback .feedback__container .content {
+    min-width: 260px;
+  }
+}
+
 @media screen and (min-width: 1060px) {
   .feedback {
     width: 70%;
@@ -110,7 +129,7 @@
             box-shadow: 0px 1px 4px grey;
   }
   .feedback .feedback__container .content {
-    min-width: 300px;
+    min-width: 340px;
   }
 }
 /*# sourceMappingURL=feedback.css.map */

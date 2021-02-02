@@ -29,11 +29,11 @@ function FeedBack() {
                 </div>
             </div>
             <div className="feedback__btn">
-                <div onClick={() => scrollHandler(-260)} className="btn">
+                <div onClick={() => scrollHandler(-360)} className="btn">
                     <NavigateBefore />
                     <Button className="prev">prev</Button>
                 </div>
-                <div onClick={() => scrollHandler(260)} className="btn">
+                <div onClick={() => scrollHandler(360)} className="btn">
                     <Button className="next">next</Button>
                     <NavigateNext />
                 </div>

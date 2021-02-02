@@ -11,35 +11,7 @@
     }
     .prices__container{
         padding: 0 15px;
-        .modal__form{
-            display: block !important;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgb(255, 255, 255);
-            box-shadow: 0px 4px 12px grey;
-            border-radius: 20px;
-            width: 90%;
-            padding: 30px 10px;
-            z-index: 200;
-            .close{
-                cursor: pointer;
-                .icon{
-                    font-size: 26px;
-                }
-            }
-            .title{
-                text-align: center;
-                h2{
-                    font-style: italic;
-                    text-decoration: underline;
-                }
-            }
-        }
-        .hide__form{
-            display: none;
-        }
+       
         .full__package{
             background-color: rgb(228, 128, 57) !important;
             color: rgb(255, 255, 255) !important;
@@ -202,10 +174,6 @@
  .prices{
      .prices__container{
         max-width: 90%;
-         .modal__form{
-             max-width: 65%;
-             margin: auto;
-         }
      }
  }   
 }

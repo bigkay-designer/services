@@ -22,14 +22,17 @@
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 30px;
 }
 
 .projects .projects__container .content .btn {
-  background-color: chocolate;
   margin: 10px 0 20px;
   padding: 0 15px;
   border-radius: 12px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .projects .projects__container .content .btn a {
@@ -46,11 +49,13 @@
 }
 
 .projects .projects__container .content .btn a svg {
-  color: #ecebeb;
+  color: #acacac;
 }
 
 .projects .projects__container .content .btn a button {
-  color: #fff;
+  margin-left: 10px;
+  background-color: #faede3;
+  color: #777777;
 }
 
 @media screen and (min-width: 860px) {

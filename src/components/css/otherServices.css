@@ -1,5 +1,5 @@
 .otherServices .otherservices__container {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   width: 100%;
 }
 
@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 760px) {
   .otherServices {
     width: 80%;
   }

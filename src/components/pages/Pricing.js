@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import {Close} from '@material-ui/icons'
 import {Button} from '@material-ui/core'
-import Contact from './Contact'
+import ContactModal from './ContactModal'
+
 import '../css/pricing.css'
 function Pricing() {
     const [openForm, setOpenForm] = useState(false)
@@ -11,19 +11,14 @@ function Pricing() {
         setCurrentPachage (e.currentTarget.parentElement.firstChild.firstChild.innerHTML)
         setOpenForm(true)
     }
+    const CloseFormHandler = () => {
+        setOpenForm(false)
+    }
     return (
         <div className="prices" id="prices">
             <div onClick={() => setOpenForm(false)} className={`${openForm && "overlay"}`}></div>
             <div className="prices__container">
-                <div className={`hide__form ${openForm && "modal__form"}`}>
-                    <div onClick={()=> setOpenForm(false)} className="close">
-                        <Close className="icon" />
-                    </div>
-                    <div className="title">
-                        <h2>{currentPackage}</h2>
-                    </div>
-                    <Contact option={openForm} />
-                </div>
+                <ContactModal currentPackage={currentPackage} openFormProp={openForm} closeFormProp={CloseFormHandler} />
                 <div className="content">
                     <div className="title">
                         <h2>Bespoke</h2>

@@ -1,8 +1,23 @@
-import React from 'react'
-import image from '../images/vector_ser.png'
+import React, {useEffect, useState} from 'react'
+import img1 from '../images/img1.webp'
+import img2 from '../images/img2.png'
+import img3 from '../images/img3.png'
+import img4 from '../images/img4.png'
 import otherServicesJson from './otherServicesJson.json'
 import '../css/otherServices.css'
-function otherServices() {
+function OtherServices() {
+
+    const [images, setImages] = useState([])
+    const importedImages = [img1, img2, img3, img4]
+
+    const imageLoopFunc = () => {
+        for(let i = 0; i < otherServicesJson.length; i++){
+          otherServicesJson[i].image = importedImages[i] 
+        }
+    }
+
+    imageLoopFunc()
+    
     return (
         <div className="otherServices">
                 <div className="bg__div"></div>
@@ -23,4 +38,4 @@ function otherServices() {
     )
 }
 
-export default otherServices
+export default OtherServices

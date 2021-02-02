@@ -41,11 +41,26 @@
   z-index: 100;
 }
 
+.nav .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(24, 23, 23, 0.4);
+  z-index: 200;
+}
+
 .nav .nav__container .nav__logo {
   width: 70%;
 }
 
+.nav .nav__container .nav__logo a {
+  text-decoration: none;
+}
+
 .nav .nav__container .nav__logo h2 {
+  cursor: pointer;
   font-size: 26px;
   color: cornsilk;
 }

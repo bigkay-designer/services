@@ -1,6 +1,15 @@
 .showCase{
     width: 100%;
     margin-bottom: 100px;
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(24, 23, 23, 0.4);
+        z-index: 200;
+    }
     .showCase__bg{
         position: absolute;
         top: 0;

@@ -13,24 +13,27 @@
                 width: 100%;
                 height: 260px;
                 object-fit: cover;
+                border-radius: 30px;
             }
 
             .btn{
-                background-color: chocolate;
                 margin: 10px 0 20px;
                 padding: 0 15px;
                 border-radius: 12px;
                 cursor: pointer;
+                display: flex;
                 a{
                     text-decoration: none;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     svg{
-                        color: rgb(236, 235, 235);
+                        color: rgb(172, 172, 172);
                     }
                     button{
-                        color: #fff;
+                        margin-left: 10px;
+                        background-color: rgb(250, 237, 227);
+                        color: rgb(119, 119, 119);
                     }
                 }
             }
