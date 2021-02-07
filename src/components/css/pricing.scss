@@ -9,9 +9,25 @@
         background-color: rgba(24, 23, 23, 0.4);
         z-index: 200;
     }
+    .payment__option{
+        background-color: #203030;
+        width: 320px;
+        margin: 0 auto 30px;
+        padding: 7px 0;
+        text-align: center;
+        border-radius: 70px;
+        button{
+            color: #fff;
+            font-size: 16px;
+            padding: 5px 15px;
+            border-radius: 70px;
+        }
+        .active{
+            background-color: #4a8686;
+        }
+    }
     .prices__container{
         padding: 0 15px;
-       
         .full__package{
             background-color: rgb(228, 128, 57) !important;
             color: rgb(255, 255, 255) !important;
@@ -26,6 +42,9 @@
                     color: rgb(250, 250, 250);
                     
                 }
+                .type__payment{
+                    color: rgb(218, 214, 214) !important;
+                }
             }
             .body{
                 ul{
@@ -37,6 +56,10 @@
             .btn{
                 box-shadow: 0px 1px 4px #fff !important;
             }
+
+            &:hover{
+                transform: scale(0.9) !important;
+            }
         }
         .content{
             display: flex;
@@ -46,7 +69,7 @@
             background-color: rgba(241, 239, 239, 0.5);
             border-radius: 20px;
             box-shadow: 0px 2px 4px rgba(58, 57, 57, 0.5);
-            padding: 20px 5px;
+            padding: 10px 5px;
             -webkit-transition: all .5s;
             -moz-transition: all .5s;
             transition: all .5s;
@@ -65,15 +88,23 @@
                 position: relative;
                 h2{
                     font-weight: 400;
+                    text-align: center;
                 }
                 .money__sign{
-                    position: absolute;
-                    top: 0;
-                    left: -12px;
                     font-size: 18px;
+                }
+                .from{
+                    font-size: 16px;
                 }
                 .amount{
                     font-size: 26px;
+                }
+                .type__payment{
+                    color: grey;
+                    margin-top: 3px;
+                    font-size: 14px;
+                    font-style: italic;
+                    text-transform: capitalize;
                 }
             }
             .body{
@@ -82,17 +113,23 @@
                 margin: auto;
                 ul{
                     padding: 0;
+                    .ul__div{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
                     li{
                         text-transform: capitalize;
-                        font-size: 18px;
-                        padding:10px 0 10px 7px;
+                        font-size: 16px;
+                        padding:5px 0 5px 7px;
                         line-height: 1.5em;
-                        list-style-type: "\2713"; // thumbs up sign                        margin: 10px 0;
                         font-weight: 550;
+                        list-style: none;
                     }
                     .grey__overlay{
                         color: grey;
                         list-style: none;
+                        padding: 0 0 5px 7px;
                     }
                 }
             }
@@ -112,9 +149,7 @@
             }
 
             &:hover{
-                border: 1px solid grey;
-                box-shadow: 0px 6px 7px rgba(150, 148, 148, 0.6);
-
+                background-color: rgba(214, 213, 213, 0.5);
             }
         }
     }
@@ -145,6 +180,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
+            grid-gap: 15px;
             max-width: 100% ;
             margin: auto;
             .full__package{
@@ -182,6 +218,7 @@
     .prices{
         .prices__container{
             max-width: 80%;
+
         }
     }
 }

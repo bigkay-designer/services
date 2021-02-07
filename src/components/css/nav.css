@@ -11,7 +11,7 @@
 }
 
 .nav {
-  padding: 20px;
+  padding: 15px 10px 15px 10px;
   z-index: 200;
 }
 
@@ -53,16 +53,32 @@
 
 .nav .nav__container .nav__logo {
   width: 70%;
+  clear: both;
 }
 
 .nav .nav__container .nav__logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
 }
 
+.nav .nav__container .nav__logo img {
+  width: 55px;
+  height: 55px;
+}
+
 .nav .nav__container .nav__logo h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1px;
+  padding-left: 5px;
   cursor: pointer;
-  font-size: 26px;
-  color: cornsilk;
+  font-size: 20px;
+  color: #eb5353;
+  font-style: italic;
 }
 
 .nav .nav__container .display__nav {
@@ -124,7 +140,7 @@
   color: black;
   list-style: none;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0 10px;
   cursor: pointer;
 }
@@ -160,7 +176,7 @@
             box-shadow: none;
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 10px 0 0;
   }
   .nav .nav__container .nav__links .nav__close {
     display: none;
@@ -183,7 +199,7 @@
     color: #fff;
   }
   .nav .nav__container .nav__links .links ul .ul__div {
-    padding: 5px;
+    padding: 0px;
     border: none;
   }
   .nav .nav__container .nav__links .links ul .ul__icon {
@@ -196,7 +212,6 @@
   }
   .nav .nav__container .nav__links .links ul li:hover {
     color: #06ac96;
-    outline: 1px solid green;
   }
   .nav .nav__container .nav__links .links .btn {
     display: none;

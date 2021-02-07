@@ -62,6 +62,7 @@
   width: 100%;
   padding: 15px 7px;
   margin-left: 10px;
+  font-size: 16px;
 }
 
 .contact .contact__container form .input__divs .icons {
@@ -69,6 +70,7 @@
 }
 
 .contact .contact__container form .input__divs button {
+  font-size: 16px;
   background-color: chocolate;
   color: #fff;
   width: 100%;
