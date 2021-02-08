@@ -14,7 +14,7 @@ function ContactModal({currentPackage, openFormProp, closeFormProp}) {
             <div className="title">
                 <h2>{currentPackage}</h2>
             </div>
-            <Contact  />
+            <Contact serviceTitle={currentPackage}  />
         </div>
     )
 }

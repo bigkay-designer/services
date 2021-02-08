@@ -25,6 +25,9 @@
                 grid-gap: 20px;
 
             }
+            .verify{
+                transform: scale(0.7);
+            }
             .input__divs{
                 width: 100%;
                 display: flex;
@@ -36,6 +39,7 @@
                     width: 100%;
                     padding: 15px 7px;
                     margin-left: 10px;
+                    outline: none;
                 }
                 select{
                     width: 100%;

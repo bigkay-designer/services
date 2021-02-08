@@ -1,22 +1,65 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Button} from '@material-ui/core'
 import {Link} from 'react-scroll'
+import axios from '../axios'
 import {Home, SettingsApplications, LocalOffer, LocationOn, Phone, LibraryBooks} from '@material-ui/icons'
 import {LinkedIn, Email, Instagram, Facebook} from '@material-ui/icons'
 import '../css/footer.css'
 function Footer() {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [errorMsg, setErrorMsg] = useState('')
+    const [error, setError] = useState(false)
+    const [successMsg, setSucessMsg] = useState('')
+    const [success, setSuccess] = useState('')
+    
+    const formSubmitHandler = (e) =>{
+        e.preventDefault()
+        let newsLetter = {name, email}
+        axios.post(`/${process.env.REACT_APP_URL_HASH}/api/newsletter`, newsLetter)
+        .then(res => {
+            setName('')
+            setEmail('')
+            setSucessMsg(res.data.msg)
+            setSuccess(true)
+            setTimeout(()=>{
+                setSucessMsg('')
+                setSuccess(false)
+            }, 5000)
+        })
+        .catch(err => {
+            setErrorMsg(err.response.data.msg)
+            setError(true)
+            setTimeout(()=>{
+                setErrorMsg('')
+                setError(false)
+            }, 5000)
+        })
+    }
     return (
         <div className="footer">
             <div className="news__letter">
+                    {
+                        error || success ?
+                            <div className={`flash ${success && "success"} ${error && "error"}`}>
+                                <h3>{errorMsg}</h3> 
+                                <h3>{successMsg}</h3> 
+                            </div>
+                        :null
+                    }
                 <div className="news__letter__container">
                     <div className="title">
                         <h2>Sign up to our <span>Newsletter</span></h2>
                         <p>Subscribe to recieve out latest updates and offers.</p>
                         <p>In subscribing your agree to these terms</p>
                     </div>
-                    <form action="#">
-                        <input type="email" required placeholder="Your Email" />
-                        <Button>Sign up</Button>
+                    <form onSubmit={formSubmitHandler}>
+                        <div className="input__div">
+                            <input onChange={(e)=> setName(e.target.value)} value={name} type="text" name="name" required placeholder="Your Full Name" />
+                            <input onChange={(e)=> setEmail(e.target.value)} value={email} type="email" name="email" required placeholder="Your Email" />
+                        </div>
+                        <Button type="submit">Sign up</Button>
                     </form>
                 </div>
             </div>

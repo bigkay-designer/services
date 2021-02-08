@@ -27,7 +27,7 @@ function Services() {
                     {serviceData.map(data => (
                         <div key={data.bodyTitle} className="content">
                             <div className="content__body">
-                            <img src={data.image} alt="image"/>
+                            <img src={data.image} alt=""/>
                             <h3> {data.bodyTitle} </h3>
                             <p> {data.bodyContent} </p>
                             </div>

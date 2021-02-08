@@ -37,6 +37,11 @@
   }
 }
 
+.contact .contact__container form .verify {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
 .contact .contact__container form .input__divs {
   width: 100%;
   display: -webkit-box;
@@ -56,6 +61,7 @@
   width: 100%;
   padding: 15px 7px;
   margin-left: 10px;
+  outline: none;
 }
 
 .contact .contact__container form .input__divs select {
