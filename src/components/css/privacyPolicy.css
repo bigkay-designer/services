@@ -1,0 +1,39 @@
+.policy {
+  margin-top: 30px;
+}
+
+.policy .policy__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.policy .policy__container .img {
+  width: 100%;
+}
+
+.policy .policy__container .img img {
+  width: 100%;
+  height: auto;
+}
+
+.policy .policy__container .body {
+  margin-top: 30px;
+}
+
+.policy .policy__container .body p {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1360px) {
+  .policy .policy__container .img {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .policy .policy__container .body {
+    width: 75%;
+    margin: 30px auto 0;
+  }
+}
+/*# sourceMappingURL=privacyPolicy.css.map */

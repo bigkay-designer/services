@@ -7,15 +7,17 @@
     left: 0;
     background-color: #203030;
 }
+.nav__bg__color{
+    background: radial-gradient(ellipse at bottom,#354747 0,#2d3b3b 100%);
+}
 .nav{
     padding: 15px 10px 15px 10px;
     z-index: 200;
-
     .hideMenu{
         display: none;
     }
    .nav__small{
-       position: fixed;
+       position: absolute;
        top: 0;
        right: 0;
        padding:10px 10px 0 0px ;
@@ -43,7 +45,6 @@
         z-index: 200;
     }
    .nav__container{
-       
        .nav__logo{
            width: 70%;
            clear: both;
@@ -103,6 +104,10 @@
                     .ul__icon{
                         color: rgb(255, 119, 119);
                     }
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
                     li{
                         color: rgb(0, 0, 0);
                         list-style: none;
@@ -149,7 +154,8 @@
                 .links{
                     position: relative;
                     padding: 0;
-                    width: 100%;
+                    width: 80%;
+                    margin: 0 auto;
                     ul{
                         display: flex;
                         justify-content: space-evenly;

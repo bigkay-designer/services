@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import img1 from '../images/img1.webp'
 import img2 from '../images/img2.png'
 import img3 from '../images/img3.png'
@@ -6,8 +6,6 @@ import img4 from '../images/img4.png'
 import otherServicesJson from './otherServicesJson.json'
 import '../css/otherServices.css'
 function OtherServices() {
-
-    const [images, setImages] = useState([])
     const importedImages = [img1, img2, img3, img4]
 
     const imageLoopFunc = () => {

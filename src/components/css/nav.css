@@ -10,6 +10,10 @@
   background-color: #203030;
 }
 
+.nav__bg__color {
+  background: radial-gradient(ellipse at bottom, #354747 0, #2d3b3b 100%);
+}
+
 .nav {
   padding: 15px 10px 15px 10px;
   z-index: 200;
@@ -20,7 +24,7 @@
 }
 
 .nav .nav__small {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   padding: 10px 10px 0 0px;
@@ -136,6 +140,11 @@
   color: #ff7777;
 }
 
+.nav .nav__container .nav__links .links ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav .nav__container .nav__links .links ul li {
   color: black;
   list-style: none;
@@ -184,7 +193,8 @@
   .nav .nav__container .nav__links .links {
     position: relative;
     padding: 0;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
   .nav .nav__container .nav__links .links ul {
     display: -webkit-box;

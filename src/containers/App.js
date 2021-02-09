@@ -1,12 +1,23 @@
 import React from 'react'
+import {Route, BrowserRouter as Router } from 'react-router-dom'
 import Landing from '../components/Landing'
+import PrivacyPolicy from '../components/pages/privacyPolicy'
+import Nav from '../components/Nav'
+import Footer from '../components/pages/Footer'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Landing />
-    </div>
+      <Router>
+        <div className="App">
+          <Nav />
+          <div className="content__wrap">
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
+            <Route path="/" exact component={Landing} />
+          </div>
+          <Footer />
+        </div>
+      </Router>
   );
 }
 

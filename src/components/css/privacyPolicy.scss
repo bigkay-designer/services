@@ -1,0 +1,41 @@
+.policy{
+    margin-top: 30px;
+    .policy__container{
+        width: 90%;
+        margin: 0 auto;
+        .img{
+            width: 100%;;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .body{
+            margin-top: 30px;
+            p{
+                margin-bottom: 20px;
+                line-height: 1.5em;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// media queries
+
+@media screen and (min-width:1360px){
+    .policy{
+        .policy__container{
+            .img{
+                width: 75%;
+                margin:0 auto;
+            }
+            .body{
+                width: 75%;
+                margin: 30px auto 0;
+                p{
+                }
+            }
+        }
+    }
+}

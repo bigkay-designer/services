@@ -1,6 +1,5 @@
 import React from 'react'
 import {Star} from '@material-ui/icons'
-import Nav from '../components/Nav'
 import ShowCase from './pages/Showcase'
 import Services from './pages/Services'
 import OtherServices from './pages/otherServices'
@@ -8,13 +7,11 @@ import Projects from './pages/Projects'
 import FeedBack from './pages/FeedBack'
 import Pricing from './pages/Pricing'
 import Contact from './pages/Contact'
-import Footer from './pages/Footer'
 import './css/landing.css'
 function Landing() {
     
     return (
         <div className="landing" id="landing">
-            <Nav />
             <ShowCase />
 
             <div className="title__landing">
@@ -60,7 +57,6 @@ function Landing() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

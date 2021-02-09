@@ -1,10 +1,10 @@
 import React, {useState, useRef} from 'react'
-import {EmojiEmotions, NavigateNext, NavigateBefore, Feedback} from '@material-ui/icons'
+import {EmojiEmotions, NavigateNext, NavigateBefore} from '@material-ui/icons'
 import {Button} from '@material-ui/core'
 import Feedbacks from '../pages/feebackJson.json'
 import '../css/feedback.css'
 function FeedBack() {
-    const [count, setCount] = useState(0)
+    // const [count, setCount] = useState(0)
     const [currentCard, setCurrentCard] = useState(Feedbacks)
     const refElement = useRef(null)
    

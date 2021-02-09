@@ -12,8 +12,12 @@ function Contact({option, serviceTitle}) {
     const [phone, setPhone] = useState('')
     const [service, setService] = useState('')
     const [budget, setBudget] = useState('')
-    const [verify, setVerify] = useState(false)
-    
+    // const [verify, setVerify] = useState(false)
+    //error handling
+    const [errorMsg, setErrorMsg] = useState('')
+    const [error, setError] = useState(false)
+    const [successMsg, setSucessMsg] = useState('')
+    const [success, setSuccess] = useState('')
     const recapcheHandler = (value) =>{
         console.log('Captcha value', value)
     }
@@ -34,12 +38,35 @@ function Contact({option, serviceTitle}) {
             setLastName('')
             setEmail('')
             setPhone('')
+            //error handling
+            setSucessMsg(res.data.msg)
+            setSuccess(true)
+            setTimeout(()=>{
+                setSucessMsg('')
+                setSuccess(false)
+            }, 5000)
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            console.log(err.response)
+            setErrorMsg('oops! Something went wrong try aging')
+            setError(true)
+            setTimeout(()=>{
+                setErrorMsg('')
+                setError(false)
+            }, 5000)
+        })
 
     }
     return (
         <div className="contact">
+                    {
+                        error || success ?
+                            <div className={`flash ${success && "success"} ${error && "error"}`}>
+                                <h3>{errorMsg}</h3> 
+                                <h3>{successMsg}</h3> 
+                            </div>
+                        :null
+                    }
             <div className={`contact__container ${!option && "main__contact"}`} >
                 <form onSubmit={onFormSubmit}>
                     <div className="input__divs">

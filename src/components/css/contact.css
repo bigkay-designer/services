@@ -1,3 +1,29 @@
+.contact .flash {
+  text-align: center;
+  background-color: #f73333;
+  color: #f1f0f0;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.contact .flash h3 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.contact .error {
+  background-color: #f74d4d;
+}
+
+.contact .success {
+  background-color: #33f743;
+  color: #000;
+}
+
 .contact .main__contact {
   background: -webkit-gradient(linear, left top, right top, from(rgba(235, 235, 235, 0.3)), color-stop(rgba(201, 200, 200, 0.4)), to(rgba(235, 235, 235, 0.5)));
   background: linear-gradient(to right, rgba(235, 235, 235, 0.3), rgba(201, 200, 200, 0.4), rgba(235, 235, 235, 0.5));
