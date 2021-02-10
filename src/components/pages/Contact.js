@@ -48,7 +48,7 @@ function Contact({option, serviceTitle}) {
         })
         .catch(err => {
             console.log(err.response)
-            setErrorMsg('oops! Something went wrong try aging')
+            setErrorMsg('Sorry, something went wrong, please contact info@bkdesignplus.com')
             setError(true)
             setTimeout(()=>{
                 setErrorMsg('')
@@ -58,7 +58,7 @@ function Contact({option, serviceTitle}) {
 
     }
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
                     {
                         error || success ?
                             <div className={`flash ${success && "success"} ${error && "error"}`}>

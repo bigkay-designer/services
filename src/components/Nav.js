@@ -36,6 +36,7 @@ const Nav = () => {
         })
     }
     scrollPositionHandler()
+
     return (
         <div className={`nav ${navScroll && "nav__scroll"} ${window.location.pathname !== '/' && "nav__bg__color"}`} id="nav">
             <div onClick={() => setOpenForm(false)} className={`${openForm && "overlay"}`}></div>
@@ -47,13 +48,21 @@ const Nav = () => {
             <div className={`nav__container `}>
              <ContactModal openFormProp={openForm} closeFormProp={CloseFormHandler} />
 
-                <div onClick="" className="nav__logo">
-                    <Link to="App" smooth={true} duration={1000}>
-                        <PageLink to="/">
+                <div className="nav__logo">
+                    {
+                        window.location.pathname === '/'? 
+                        <>
+                            <Link to="App" smooth={true} duration={1000}>
+                                <img src={logo} alt="logo"/>
+                                <h2 className={`${navScroll && "scroll__color"}`}>BK <br/> <span className="sub__name">DesignPlus</span></h2>
+                            </Link>
+                        </>
+                        :
+                        <a href="/" smooth={true} duration={1000}>
                             <img src={logo} alt="logo"/>
                             <h2 className={`${navScroll && "scroll__color"}`}>BK <br/> <span className="sub__name">DesignPlus</span></h2>
-                        </PageLink>
-                    </Link>
+                        </a>
+                    }
                 </div>
                 <nav className={`nav__links ${openMenu && "display__nav"} `}>
                     <div onClick={()=> setOpenMenu(false)} className="nav__close">
@@ -61,11 +70,24 @@ const Nav = () => {
                     </div>
                     <div className="links">
                         <ul className={`${navScroll && "scroll__color"}`}>
-                        <Link onClick={()=> setOpenMenu(false)} to="App" smooth={true} duration={1000}> <div className="ul__div " > <Home className="ul__icon" /> <PageLink to="/"><li >home </li></PageLink>  </div> </Link>
-                        <Link onClick={()=> setOpenMenu(false)} to="services" smooth={true} duration={1000}><div className="ul__div " > <SettingsApplications className="ul__icon" /> <PageLink to="/#services"><li >services </li></PageLink>  </div> </Link>
-                        <Link onClick={()=> setOpenMenu(false)} to="projects" smooth={true} duration={1000}><div className="ul__div " > <LibraryBooks className="ul__icon" /><PageLink to="/#projects"><li >portfolio </li></PageLink>  </div> </Link>
-                        <Link onClick={()=> setOpenMenu(false)} to="prices" smooth={true} duration={1000}><div className="ul__div " > <LocalOffer className="ul__icon" /> <PageLink to="/#services"><li >prices </li></PageLink>  </div> </Link>
-                        <Link onClick={()=> setOpenMenu(false)} to="contact__id" smooth={true} duration={1000}><div className="ul__div " > <ContactPhone className="ul__icon" /><PageLink to="/#services"><li >contact us </li></PageLink>  </div> </Link>
+                            {
+                                window.location.pathname === '/' ?
+                                <>
+                                    <Link onClick={()=> setOpenMenu(false)} to="App" smooth={true} duration={1000} offset={-150}> <div className="ul__div " > <Home className="ul__icon" /> <li>home </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="services" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <SettingsApplications className="ul__icon" /> <li>services </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="projects" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <LibraryBooks className="ul__icon" /><li>Portfolio </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="prices" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <LocalOffer className="ul__icon" /> <li>prices </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="contact__id" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <ContactPhone className="ul__icon" /><li>contact us</li> </div> </Link>
+                                </>
+                                :
+                                <>
+                                    <a onClick={()=> setOpenMenu(false)} href="/"> <div className="ul__div " > <Home className="ul__icon" /> <li>home </li> </div> </a>
+                                    <a onClick={()=> setOpenMenu(false)} href="/#services"><div className="ul__div " > <SettingsApplications className="ul__icon" /> <li>services </li> </div> </a>
+                                    <a onClick={()=> setOpenMenu(false)} href="/#projects"><div className="ul__div " > <LibraryBooks className="ul__icon" /><li>Portfolio </li> </div> </a>
+                                    <a onClick={()=> setOpenMenu(false)} href="/#prices"><div className="ul__div " > <LocalOffer className="ul__icon" /> <li>prices </li> </div> </a>
+                                    <a onClick={()=> setOpenMenu(false)} href="/#contact__id" ><div className="ul__div " > <ContactPhone className="ul__icon" /><li>contact us</li> </div> </a>
+                                </>
+                            }
                         </ul>
                         <div onClick={openFormHandler} className="btn">
                             <Button className="btn__icon">Get A Quote</Button>

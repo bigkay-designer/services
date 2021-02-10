@@ -15,7 +15,6 @@
 .footer .news__letter .flash {
   text-align: center;
   background-color: #f73333;
-  color: #f1f0f0;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
@@ -25,6 +24,7 @@
 }
 
 .footer .news__letter .flash h3 {
+  color: #000;
   font-size: 16px;
   font-weight: 800;
 }
@@ -34,8 +34,7 @@
 }
 
 .footer .news__letter .success {
-  background-color: #33f743;
-  color: #000;
+  background-color: #1daf29;
 }
 
 .footer .news__letter .news__letter__container {

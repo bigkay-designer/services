@@ -30,7 +30,7 @@ function Footer() {
             }, 5000)
         })
         .catch(err => {
-            setErrorMsg(err.response.data.msg)
+            setErrorMsg('Sorry, something went wrong, please contact info@bkdesignplus.com')
             setError(true)
             setTimeout(()=>{
                 setErrorMsg('')
@@ -68,11 +68,11 @@ function Footer() {
             <div className="wrap__div">
                 <div className="links">
                 <ul>
-                    <div className="ul__div " > <Home className="ul__icon" /> <Link to="App" smooth={true} duration={1000}><PageLink to="/"><li >Home </li></PageLink></Link> </div>
-                    <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000}><li >services </li></Link> </div>
-                    <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000}><li >prices </li></Link> </div>
-                    <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000}><li >projects </li></Link> </div>
-                    <div className="ul__div " > <Security className="ul__icon" /> <PageLink to="/privacy-policy"><li >Privacy </li></PageLink> </div>
+                    <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000} offset={-150}><li >home </li></Link> </div>
+                    <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000} offset={-150}><li >services </li></Link> </div>
+                    <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000} offset={-150}><li >prices </li></Link> </div>
+                    <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000} offset={-150}><li >projects </li></Link> </div>
+                    <div className="ul__div " > <Security className="ul__icon" /><PageLink to="/privacy-policy"><li >Privacy </li></PageLink></div>
                 </ul>
                 </div>
                 <div className="contact__info">
