@@ -1,6 +1,7 @@
 import React from 'react'
 import {Star} from '@material-ui/icons'
 import ShowCase from './pages/Showcase'
+import ServiceList from './pages/ServiceList'
 import Services from './pages/Services'
 import OtherServices from './pages/otherServices'
 import Projects from './pages/Projects'
@@ -13,7 +14,12 @@ function Landing() {
     return (
         <div className="landing" id="landing">
             <ShowCase />
-
+            
+            <div className="title__landing">
+                <h2>Our services</h2>
+            </div>
+            <ServiceList />
+            
             <div className="title__landing">
                 <h2>Our services include</h2>
             </div>

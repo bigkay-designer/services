@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
 import {Button} from '@material-ui/core'
 import axios from '../axios'
-import { Person,People, Email, Phone, Send, AttachMoney } from '@material-ui/icons'
+import { Person,People, Email, Phone, Send, AttachMoney, SettingsApplications } from '@material-ui/icons'
 
 import '../css/contact.css'
 function Contact({option, serviceTitle}) {
@@ -18,22 +18,26 @@ function Contact({option, serviceTitle}) {
     const [error, setError] = useState(false)
     const [successMsg, setSucessMsg] = useState('')
     const [success, setSuccess] = useState('')
-    const recapcheHandler = (value) =>{
-        console.log('Captcha value', value)
-    }
-    const onFormSubmit  = (e) => {
+    const reRef = useRef()
+
+    let recaptchaKey = process.env.REACT_APP_RECAPTHA_KEY
+    const onFormSubmit  = async (e) => {
         e.preventDefault()
+
+        const token = await reRef.current.executeAsync()
+        reRef.current.reset()
+        
         const msg = {
             firstName,
             lastName,
             email,
             phone,
             service,
-            budget
+            budget,
+            token
         }
         axios.post(`/${process.env.REACT_APP_URL_HASH}/api/contact`, msg)
         .then((res)=>{
-            // console.log(res)
             setFirstName('')
             setLastName('')
             setEmail('')
@@ -47,8 +51,7 @@ function Contact({option, serviceTitle}) {
             }, 5000)
         })
         .catch(err => {
-            console.log(err.response)
-            setErrorMsg('Sorry, something went wrong, please contact info@bkdesignplus.com')
+            setErrorMsg(err.response.data.msg)
             setError(true)
             setTimeout(()=>{
                 setErrorMsg('')
@@ -76,7 +79,7 @@ function Contact({option, serviceTitle}) {
                         <People className="icons" /><input className="input1" name="lastName" type="text" onChange={e => setLastName(e.target.value)} value={lastName} required placeholder="Last name" />
                     </div>
                     <div className="input__divs">
-                        <Email className="icons" /><input className="input3" name="email" type="email" onChange={e => setEmail(e.target.value)} value={email} required placeholder="Emai ddress" />
+                        <Email className="icons" /><input className="input3" name="email" type="email" onChange={e => setEmail(e.target.value)} value={email} required placeholder="Emai address" />
                     </div>
                     <div className="input__divs">
                         <Phone className="icons" /><input className="input4" name="phone" type="number" onChange={e => setPhone(e.target.value)} value={phone} required placeholder="Phone" />
@@ -92,7 +95,7 @@ function Contact({option, serviceTitle}) {
                         </select>
                     </div>
                     <div className={`input__divs `}>
-                        <AttachMoney className="icons" />
+                        <SettingsApplications className="icons" />
                         <select  name="service" onChange={(e) => setService(e.target.value)} required>
                             {
                                 serviceTitle ? 
@@ -119,8 +122,9 @@ function Contact({option, serviceTitle}) {
                     </div>
                     <div className="verify">
                     <ReCAPTCHA
-                        sitekey="6LeH9E4aAAAAACgNaI9jWwaXZvyb116oYxiLTG3e"
-                        onChange={recapcheHandler}
+                        sitekey={recaptchaKey}
+                        size="invisible"
+                        ref={reRef}
                         />
                     </div>
                 </form>

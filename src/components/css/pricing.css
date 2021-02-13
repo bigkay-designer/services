@@ -14,11 +14,19 @@
 
 .prices .payment__option {
   background-color: #203030;
-  width: 320px;
-  margin: 0 auto 30px;
-  padding: 7px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 10px 30px;
+  padding: 7px 10px;
   text-align: center;
   border-radius: 70px;
+}
+
+@media screen and (min-width: 460px) {
+  .prices .payment__option {
+    margin: 0 auto 30px;
+  }
 }
 
 .prices .payment__option button {
@@ -30,6 +38,16 @@
 
 .prices .payment__option .active {
   background-color: #4a8686;
+}
+
+.prices .into__pricing {
+  margin: 0 10px;
+}
+
+.prices .into__pricing p {
+  color: #4e4e4e;
+  line-height: 1.5em;
+  margin: 10px 0;
 }
 
 .prices .prices__container {
@@ -56,6 +74,10 @@
 
 .prices .prices__container .full__package .price .type__payment {
   color: #dad6d6 !important;
+}
+
+.prices .prices__container .full__package .body ul li {
+  font-weight: 800 !important;
 }
 
 .prices .prices__container .full__package .body ul .grey__overlay {
@@ -95,10 +117,11 @@
   transition: all .5s;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  margin-top: 20px;
 }
 
 .prices .prices__container .content .title {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .prices .prices__container .content .title h2 {
@@ -106,6 +129,7 @@
   font-weight: 700;
   word-break: break-all;
   word-wrap: break-word;
+  text-transform: capitalize;
 }
 
 .prices .prices__container .content .price {
@@ -207,6 +231,10 @@
 }
 
 @media screen and (min-width: 760px) {
+  .prices .into__pricing {
+    max-width: 75%;
+    margin: auto;
+  }
   .prices .prices__container {
     display: -ms-grid;
     display: grid;

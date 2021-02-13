@@ -1,36 +1,31 @@
 [
     {
-        "image": "https://nonprofitssource.com/wp-content/uploads/2018/11/Vector-Smart-Object.png",
+        "image": "",
+        "bodyTitle": "Highly Scalable",
+        "bodyContent": "Whether you’re looking for a hobby website, or developing a enterprise solution, websites start somewhere. How they’re built and coded has a huge impact on how easily they can be maintained, and expanded upon in the future. At BK DesignPlus we use coding best practises. Keeping code simple is what we found to be most effective."
+    },
+    {
+        "image": "",
         "bodyTitle": "Bespoke desing",
         "bodyContent": "All of our websites are carefully designed in Photoshop and Adobe XD before being coded by our experience web developers, ensuring your site is a unique and bespoke design. We collaborate with our clients and consider there feedback to ensure 100% design satisfaction."
     },
     {
-        "image": "https://www.pinclipart.com/picdir/big/74-747203_website-design-and-development-melbourne-website-design-vector.png",
+        "image": "",
+        "bodyTitle": "one year free Domain",
+        "bodyContent": "All packages include free domain name registration for the first 12 months. That means we’ll check in monthly to see if your site needs maintenance updates plus you can rest assured your site will live on servers with a 99.9% uptime over the year"
+    },
+    {
+        "image": "",
         "bodyTitle": "mobile optimised",
         "bodyContent": "All the websites we develop will display beautifully on all screen sizes as standard. This establishes best viewing experience accross all devices."
     },
     {
-        "image": "https://www.pngarts.com/files/1/E-Commerce-Concept-PNG-Image-Background.png",
-        "bodyTitle": "E-commerce",
-        "bodyContent": "We offer industry-leading, secure, enterprise standard e-commerce systems as part of our website development. We can adapt e-commerce systems, including Magento and WooCommerce, to work seamlessly with your business model, whether it be drop shipping, virtual products, or international sales."
-    },
-    {
-        "image": "https://plsadaptive.s3.amazonaws.com/eco/images/channel_content/images/magecart_webinar_image.png",
+        "image": "",
         "bodyTitle": "Security",
         "bodyContent": "Security of your website and its data is a key considerate of our website development process. As such we take steps to ensure that your website and its data is kept secure from bots, hackers and virus/malware attempts."
     },
     {
-        "image": "https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_960_720.png",
-        "bodyTitle": "Custom Development",
-        "bodyContent": "All our websites are custom coded on a lightweight framework that has been coded by our experienced team and it's highly scalable, agile, and easy to adapt. This ensures no excessive bulkiness or code bloat  – resulting in faster website loading times."
-    },
-    {
-        "image": "https://freepikpsd.com/wp-content/uploads/2020/07/web-hosting-service-high-quality-png.png",
-        "bodyTitle": "one year free hosting",
-        "bodyContent": "All packages include free domain name registration for the first 12 months. That means we’ll check in monthly to see if your site needs maintenance updates plus you can rest assured your site will live on servers with a 99.9% uptime over the year"
-    },
-    {
-        "image": "https://riskcontrolacademy.com/wp-content/uploads/2019/09/support.png",
+        "image": "",
         "bodyTitle": "Support from our team",
         "bodyContent": " Once your website is finished that’s not the end of working with us. If you want additional training, have a query or just want a chat about next steps, we’re there for you. Plus we’ll check in on your website regularly for maintenance, even more so if you’re working with us on SEO."
     }

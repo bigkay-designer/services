@@ -4,10 +4,9 @@ import {Link as PageLink} from 'react-router-dom'
 import {Link} from 'react-scroll'
 import axios from '../axios'
 import {Home, SettingsApplications, LocalOffer, LocationOn, Phone, LibraryBooks, Security} from '@material-ui/icons'
-import {LinkedIn, Email, Instagram, Facebook} from '@material-ui/icons'
+import {LinkedIn, Email, Instagram, Twitter} from '@material-ui/icons'
 import '../css/footer.css'
 function Footer() {
-
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [errorMsg, setErrorMsg] = useState('')
@@ -30,7 +29,7 @@ function Footer() {
             }, 5000)
         })
         .catch(err => {
-            setErrorMsg('Sorry, something went wrong, please contact info@bkdesignplus.com')
+            setErrorMsg(err.response.data.msg)
             setError(true)
             setTimeout(()=>{
                 setErrorMsg('')
@@ -68,24 +67,37 @@ function Footer() {
             <div className="wrap__div">
                 <div className="links">
                 <ul>
-                    <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000} offset={-150}><li >home </li></Link> </div>
-                    <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000} offset={-150}><li >services </li></Link> </div>
-                    <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000} offset={-150}><li >prices </li></Link> </div>
-                    <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000} offset={-150}><li >projects </li></Link> </div>
-                    <div className="ul__div " > <Security className="ul__icon" /><PageLink to="/privacy-policy"><li >Privacy </li></PageLink></div>
+                    {
+                        window.location.pathname === '/' ?
+                        <>
+                            <div className="ul__div " > <Home className="ul__icon" /> <Link to="landing" smooth={true} duration={1000} offset={-150}><li >home </li></Link> </div>
+                            <div className="ul__div " > <SettingsApplications className="ul__icon" /> <Link to="services" smooth={true} duration={1000} offset={-150}><li >services </li></Link> </div>
+                            <div className="ul__div " > <LocalOffer className="ul__icon" /> <Link to="prices" smooth={true} duration={1000} offset={-150}><li >prices </li></Link> </div>
+                            <div className="ul__div " > <LibraryBooks className="ul__icon" /> <Link to="projects" smooth={true} duration={1000} offset={-150}><li >projects </li></Link> </div>
+                            <div className="ul__div " > <Security className="ul__icon" /><a href="/privacy-policy"><li >Privacy </li></a></div>
+                        </> :
+                        <>
+                            <div className="ul__div " > <Home className="ul__icon" /> <a href="/"><li >home </li></a> </div>
+                            <div className="ul__div " > <SettingsApplications className="ul__icon" /> <a href="/#services"><li >services </li></a> </div>
+                            <div className="ul__div " > <LocalOffer className="ul__icon" /> <a href="/#prices"><li >prices </li></a> </div>
+                            <div className="ul__div " > <LibraryBooks className="ul__icon" /> <a href="/#projects"><li >projects </li></a> </div>
+                            <div className="ul__div " > <Security className="ul__icon" /><a href="/privacy-policy"><li >Privacy </li></a></div>
+                        </> 
+
+                    }
                 </ul>
                 </div>
                 <div className="contact__info">
                     <div className="contact__info__div"><LocationOn className="icons" /><p>United Kindom, Luton</p> </div>
                     <div className="contact__info__div"><Email className="icons" /> <a href="https://mail.google.com/mail/u/1/?tab=wm&ogbl#inbox?compose=new" target="_blank" rel="noreferrer"><p>info@bkdesignplus.com</p></a> </div>
-                    <div className="contact__info__div"><Phone className="icons" /><p> <a href="tel:+447494498323">07494498323</a></p> </div>
+                    <div className="contact__info__div"><Phone className="icons" /><p> <a href="tel:+447709784016">07709784016</a></p> </div>
                 </div>
                 <div className="socials">
                     <h3>Follow us</h3>
                     <div className="icons">
                         <div> <a href="https://www.linkedin.com/in/khalid-ibrahim-3b2b71201/" target="_blank" rel="noreferrer"><LinkedIn className="icon lk" /></a> </div>
                         <div> <a href="https://www.instagram.com/bkdesignplus/" target="_blank" rel="noreferrer"><Instagram className="icon ig" /></a> </div>
-                        <div> <a href="https://en-gb.facebook.com/" target="_blank" rel="noreferrer"><Facebook className="icon fb" /> </a></div>
+                        <div> <a href="https://twitter.com/bkdesignplus" target="_blank" rel="noreferrer"><Twitter className="icon fb" /> </a></div>
                     </div>
                 </div>
             </div>

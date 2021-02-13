@@ -54,8 +54,8 @@
 }
 
 .showCase .showCase__container .title .sub__para {
-  font-size: 16px;
-  color: #e7e7e7;
+  font-size: 15px;
+  color: #d4d3d3;
 }
 
 .showCase .showCase__container .title .btn {
@@ -100,7 +100,7 @@
   }
 }
 
-@media screen and (min-width: 1090px) {
+@media screen and (min-width: 1160px) {
   .showCase .showCase__bg {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
             clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
@@ -133,7 +133,7 @@
 
 @media screen and (min-width: 1280px) {
   .showCase .showCase__bg {
-    height: 60vh;
+    height: 65vh;
   }
 }
 /*# sourceMappingURL=showcase.css.map */

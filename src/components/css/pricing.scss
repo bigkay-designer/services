@@ -11,11 +11,14 @@
     }
     .payment__option{
         background-color: #203030;
-        width: 320px;
-        margin: 0 auto 30px;
-        padding: 7px 0;
+        width:fit-content;
+        margin: 0 10px 30px;
+        padding: 7px 10px;
         text-align: center;
         border-radius: 70px;
+        @media screen and (min-width: 460px){
+            margin: 0 auto 30px;
+        }
         button{
             color: #fff;
             font-size: 16px;
@@ -26,8 +29,20 @@
             background-color: #4a8686;
         }
     }
+
+
+    .into__pricing{
+        margin: 0 10px;
+        p{
+            color: rgb(78, 78, 78);
+            line-height: 1.5em;
+            margin: 10px 0;
+        }
+    }
+
     .prices__container{
         padding: 0 15px;
+
         .full__package{
             background-color: rgb(228, 128, 57) !important;
             color: rgb(255, 255, 255) !important;
@@ -48,6 +63,9 @@
             }
             .body{
                 ul{
+                    li{
+                        font-weight: 800 !important;
+                    }
                     .grey__overlay{
                         color: rgb(204, 203, 203) !important;
                     }
@@ -61,6 +79,7 @@
                 transform: scale(0.9) !important;
             }
         }
+        
         .content{
             display: flex;
             flex-direction: column;
@@ -74,13 +93,15 @@
             -moz-transition: all .5s;
             transition: all .5s;
             transform: scale(0.9);
+            margin-top: 20px;
             .title{
-                font-size: 22px;
+                font-size: 20px;
                 h2{
                     text-align: center;
                     font-weight: 700;
                     word-break: break-all;
                     word-wrap: break-word;
+                    text-transform: capitalize;
                 }
             }
             .price{
@@ -176,6 +197,10 @@
 
 @media screen and (min-width:760px){
     .prices{
+        .into__pricing{
+            max-width: 75%;
+            margin: auto;
+    }
         .prices__container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);

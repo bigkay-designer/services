@@ -3,7 +3,7 @@
     .services__container{
         position: relative;
         max-width: 100%;
-        height: 520px;
+        height: 540px;
         margin: 0 auto;
         overflow-x:scroll;
         scroll-behavior: smooth;
@@ -57,7 +57,7 @@
         display: flex !important;
         justify-content: center;
         align-items: center;
-        margin: 0px 0 100px;
+        margin: 0px 0 60px;
         .btn{
             display:flex;
             justify-content: center;
@@ -90,13 +90,12 @@
         }
     }
 }
-
 @media screen and (min-width:760px){
     .services{
         .services__container{
             position: relative;
             max-width: 100%;
-            height: 540px;
+            height: 550px;
             margin: 0 auto;
             .services__body{
                 display: flex;
@@ -113,6 +112,38 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width:1260px){
+    .services{
+
+        .services__container{
+            width: 90%;
+            margin: auto;
+        }
+    }
+}
+@media screen and (min-width:1620px){
+    .services{
+
+        .services__container{
+            width: 90%;
+            margin: auto;
+        }
+        .service__list__btn{
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (min-width:1720px){
+    .services{
+
+        .services__container{
+            width: 80%;
+            margin: auto;
         }
     }
 }

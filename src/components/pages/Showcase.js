@@ -18,9 +18,9 @@ function Showcase() {
                 <div className="title">
                     <p className="question__para">want to transfer your business and gain customers?</p>
                     
-                    <p>Well at BKDesign we turn ideas into great digital solutions. We Specialise in <span> Creative and Affordable web design</span></p>
+                    <p>Well at BK DesignPlus we turn ideas into great digital solutions. We Specialise in <span> Creative and Affordable Web Design</span></p>
 
-                    <p className="sub__para">Web Design, Web Development, UX,UI & Branding.</p>
+                    <p className="sub__para">Web Design, Web Development, UX/UI, Email Marketing & Branding.</p>
                     <div onClick={() => setOpenForm(true)} className="btn">
                         <Button className="btn__icon">Get A Quote</Button>
                     </div>

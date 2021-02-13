@@ -1,29 +1,26 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {Button} from '@material-ui/core'
 import {NavigateNext, NavigateBefore} from '@material-ui/icons'
-import serviceJson from '../pages/servicesJson.json'
-import bespokeImg from '../images/bespoke-design.png'
-import mobileOptImg from '../images/mobile-opt.png'
-import securityImg from "../images/security.png"
-import customDevImg from '../images/custom-dev.webp'
-import domainImg from '../images/free-domain.png'
-import supportImg from '../images/support.png'
+import serviceListJson from '../pages/ServiceListJson.json'
+import webDesingImg from '../images/web-design.png'
+import webDevImg from '../images/web-dev.png'
+import eCommerceImg from '../images/e-commerce.png'
+import hostingImg from '../images/hosting.png'
+import emailMrkImg from '../images/email-mrk.png'
 import '../css/services.css'
 function Services() {
     const [serviceData, setServiceData] = useState([])
     const refElement = useRef(null)
-    const importedImages = [bespokeImg, mobileOptImg, securityImg, customDevImg, domainImg, supportImg]
-
-    const importedImageHandler = () => {
-        for(let i = 0; i < importedImages.length; i++){
-            serviceJson[i].image =  importedImages[i]
-        }
-    }
-    importedImageHandler()
-
+    const importedImage = [webDesingImg, webDevImg, eCommerceImg, hostingImg, emailMrkImg]
 
     useEffect(()=>{
-        setServiceData(serviceJson)
+        for(let i =0; i < serviceListJson.length; i++){
+            serviceListJson[i].image = importedImage[i]
+        }
+    }, [])
+
+    useEffect(()=>{
+        setServiceData(serviceListJson)
     }, [])
 
     const scrollRightHandler = (moveLeft) => {
@@ -34,8 +31,6 @@ function Services() {
         refElement.current.scrollLeft += moveLeft
 
     };
-
-
     return (
         <div className="services" id="services">
             <div className="services__container" ref={refElement}>
@@ -51,7 +46,7 @@ function Services() {
                     ))}
                 </div>
             </div>
-            <div className="services__btn">
+            <div className="services__btn service__list__btn">
                 <div onClick={() => scrollLeftHandler(-280)} className="btn">
                     <NavigateBefore />
                     <Button className="prev">prev</Button>

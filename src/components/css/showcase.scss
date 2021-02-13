@@ -46,8 +46,8 @@
                 }
             }
             .sub__para{
-                font-size: 16px;
-                color: rgb(231, 231, 231);
+                font-size: 15px;
+                color: rgb(212, 211, 211);
             }
             .btn{
                 text-align: center;
@@ -95,7 +95,7 @@
     }
 }
 
-@media screen and (min-width:1090px){
+@media screen and (min-width:1160px){
     .showCase{
         .showCase__bg{
             clip-path: polygon(0 0, 100% 0%, 100% 50%, 0% 100%);
@@ -128,7 +128,7 @@
 @media screen and (min-width:1280px){
     .showCase{
         .showCase__bg{
-            height: 60vh;
+            height: 65vh;
         }
     }
 }

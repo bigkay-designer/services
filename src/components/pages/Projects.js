@@ -27,7 +27,7 @@ function Projects() {
                 <div className="content">
                     <img src="https://res.cloudinary.com/diqgjrpua/image/upload/v1606799594/portfolio%20images/screenshot-outdoorfinest-co-uk-1606799570706_cskgfe.png" alt=""/>
                     <div className="btn">
-                        <a href="https://callmyneighbour.site/" target="_blank" rel="noreferrer">
+                        <a href="https://outdoorfinest.co.uk/" target="_blank" rel="noreferrer">
                             <Visibility />
                             <Button>view project</Button>
                         </a>
