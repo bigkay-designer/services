@@ -11,9 +11,9 @@ import '../css/services.css'
 function Services() {
     const [serviceData, setServiceData] = useState([])
     const refElement = useRef(null)
-    const importedImage = [webDesingImg, webDevImg, eCommerceImg, hostingImg, emailMrkImg]
-
+    
     useEffect(()=>{
+        const importedImage = [webDesingImg, webDevImg, eCommerceImg, hostingImg, emailMrkImg]
         for(let i =0; i < serviceListJson.length; i++){
             serviceListJson[i].image = importedImage[i]
         }

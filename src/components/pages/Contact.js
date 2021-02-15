@@ -101,16 +101,16 @@ function Contact({option, serviceTitle}) {
                                 serviceTitle ? 
                                 <>
                                     <option value={serviceTitle}>{serviceTitle}</option>
-                                    <option disabled value="Custom Design">Basic Package</option>
-                                    <option disabled value="full package">Business Site</option>
+                                    <option disabled value="Basic Package">Basic Package</option>
+                                    <option disabled value="Business Site">Business Site</option>
                                     <option disabled value="E-commerce">E-Commerce</option>
                                     <option disabled value="other">Other</option>
                                 </>
                                 :
                                 <>
                                     <option value="">Please Select (Service)</option>
-                                    <option value="Custom Design">Custom Design</option>
-                                    <option value="full package">Full Package</option>
+                                    <option value="Basic Package">Basic Package</option>
+                                    <option value="Business Site">Business Site</option>
                                     <option value="E-commerce">E-Commerce</option>
                                     <option value="other">Other</option>
                                 </>

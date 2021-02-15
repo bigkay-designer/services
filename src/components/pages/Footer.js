@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Button} from '@material-ui/core'
-import {Link as PageLink} from 'react-router-dom'
+// import {Link as PageLink} from 'react-router-dom'
 import {Link} from 'react-scroll'
 import axios from '../axios'
 import {Home, SettingsApplications, LocalOffer, LocationOn, Phone, LibraryBooks, Security} from '@material-ui/icons'
@@ -51,7 +51,7 @@ function Footer() {
                 <div className="news__letter__container">
                     <div className="title">
                         <h2>Sign up to our <span>Newsletter</span></h2>
-                        <p>Subscribe to recieve our latest updates and offers.</p>
+                        <p>Subscribe to receive our latest updates and offers.</p>
                         {/* <p>In subscribing your agree to these terms</p> */}
                     </div>
                     <form onSubmit={formSubmitHandler}>

@@ -59,7 +59,7 @@ function Pricing() {
             </div>
             <div className="into__pricing">
                 <p>The price of each website varies and it's defined by the <strong>time the project will take</strong> and the <strong>complexity of work</strong>, so these prices are meant as an estimate for the average specification.</p>
-                <p>We prefer to work on an agreed fixed price instead of an hourly, but if needed we can negotiate an hourly rate. <strong>Also You can spread the cost over 3 months.</strong> </p>
+                <p>We prefer to work on an agreed fixed price instead of an hourly, but if needed we can negotiate an hourly rate. <strong>Also, You can spread the cost over 3 months.</strong> </p>
             </div>
 
             <div className="prices__container">
@@ -75,15 +75,15 @@ function Pricing() {
                     <div className="body">
                         <ul>
                             <div className="ul__div" > <Check /> <li>responsive design </li> </div>
-                            <div className="ul__div" > <Check /> <li>Bespok Website Design</li> </div>
+                            <div className="ul__div" > <Check /> <li>Bespoke Website Design</li> </div>
                             <div className="ul__div" > <Check /> <li>1 Year Free Domain (worth £35+)</li> </div>
                             <div className="ul__div" > <Check /> <li>100% Ownership</li> </div>
                             <div className="ul__div" > <Check /> 
-                            <li> Super perfomant</li> </div>
+                            <li> Super Performant</li> </div>
                             <div className="ul__div" > <Check /> 
                             <li> Hosting £20/mo</li> </div>
-                            <li className="grey__overlay">Free HTTPS encription</li>
-                            <li className="grey__overlay">Google My Business Set Up</li>
+                            <li className="grey__overlay">Free HTTPS Encryption</li>
+                            <li className="grey__overlay">Google My Business Set-Up</li>
                             <li className="grey__overlay">Google Maps</li>
                             <li className="grey__overlay">Contact form </li>
                             <li className="grey__overlay">payment gateway</li>
@@ -107,12 +107,12 @@ function Pricing() {
                             <div className="ul__div" > <Check /> <li>Bespoke Website Design</li> </div>
                             <div className="ul__div" > <Check /> <li>1 Year Free Domain (worth £35+)</li> </div>
                             <div className="ul__div" > <Check /> <li>100% Ownership</li> </div>
-                            <div className="ul__div" > <Check /> <li>Free HTTPS Encription</li> </div>
+                            <div className="ul__div" > <Check /> <li>Free HTTPS Encryption</li> </div>
                             <div className="ul__div" > <Check /> <li> Foundation of SEO as standard</li> </div>
                             <div className="ul__div" > <Check /> <li>Free 3 months hosting, then £25/mo</li> </div>
                             <div className="ul__div" > <Check /> 
-                            <li> Super perfomant</li> </div>
-                            <li className="grey__overlay">Google My Business Set Up</li>
+                            <li> Super Performant</li> </div>
+                            <li className="grey__overlay">Google My Business Set-Up</li>
                             <li className="grey__overlay">Google Maps</li>
                             <div className="ul__div" > <Check /> <li>Contact form</li> </div>
                             <li className="grey__overlay">payment gateway</li>
@@ -138,11 +138,11 @@ function Pricing() {
                             <div className="ul__div" > <Check /> <li>100% Ownership</li> </div>
                             <div className="ul__div" > <Check /> 
                             <li> Foundation of SEO as standard</li> </div>
-                            <div className="ul__div" > <Check /> <li>Free HTTPS Encription</li> </div>
-                            <div className="ul__div" > <Check /> <li>Google My Business Set Up</li> </div>
+                            <div className="ul__div" > <Check /> <li>Free HTTPS Encryption</li> </div>
+                            <div className="ul__div" > <Check /> <li>Google My Business Set-Up</li> </div>
                             <div className="ul__div" > <Check /> <li>Free 3 months hosting, then £35/mo</li> </div>
                             <div className="ul__div" > <Check /> 
-                            <li> Super perfomant</li> </div>
+                            <li> Super Performant</li> </div>
                             <div className="ul__div" > <Check /> <li>Google Maps</li> </div>
                             <div className="ul__div" > <Check /> <li>Contact form</li> </div>
                             <div className="ul__div" > <Check /> <li>payment gateway</li> </div>                       
