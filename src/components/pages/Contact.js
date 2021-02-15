@@ -79,7 +79,7 @@ function Contact({option, serviceTitle}) {
                         <People className="icons" /><input className="input1" name="lastName" type="text" onChange={e => setLastName(e.target.value)} value={lastName} required placeholder="Last name" />
                     </div>
                     <div className="input__divs">
-                        <Email className="icons" /><input className="input3" name="email" type="email" onChange={e => setEmail(e.target.value)} value={email} required placeholder="Emai address" />
+                        <Email className="icons" /><input className="input3" name="email" type="email" onChange={e => setEmail(e.target.value)} value={email} required placeholder="Email address" />
                     </div>
                     <div className="input__divs">
                         <Phone className="icons" /><input className="input4" name="phone" type="number" onChange={e => setPhone(e.target.value)} value={phone} required placeholder="Phone" />
@@ -101,8 +101,8 @@ function Contact({option, serviceTitle}) {
                                 serviceTitle ? 
                                 <>
                                     <option value={serviceTitle}>{serviceTitle}</option>
-                                    <option disabled value="Custom Design">Custom Design</option>
-                                    <option disabled value="full package">Full Package</option>
+                                    <option disabled value="Custom Design">Basic Package</option>
+                                    <option disabled value="full package">Business Site</option>
                                     <option disabled value="E-commerce">E-Commerce</option>
                                     <option disabled value="other">Other</option>
                                 </>

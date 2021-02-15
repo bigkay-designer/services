@@ -58,15 +58,15 @@ function Pricing() {
                 <Button onClick={paymentOptionHandler} className={`${yearly && "active"}`}>ONE-TIME PAYMENT</Button>
             </div>
             <div className="into__pricing">
-                <p>The price of each website varies and it's defined by the <strong>time the project will take</strong> and the <strong>complexity of work.</strong>. </p>
-                <p>We prefer to work on an agreed fixed price instead of an hourly, but if needed we can negotiate an hourly rate. <strong>Also You can spread the cost over 3 months</strong> </p>
+                <p>The price of each website varies and it's defined by the <strong>time the project will take</strong> and the <strong>complexity of work</strong>, so these prices are meant as an estimate for the average specification.</p>
+                <p>We prefer to work on an agreed fixed price instead of an hourly, but if needed we can negotiate an hourly rate. <strong>Also You can spread the cost over 3 months.</strong> </p>
             </div>
 
             <div className="prices__container">
                 <ContactModal currentPackage={currentPackage} openFormProp={openForm} closeFormProp={CloseFormHandler} />
                 <div className="content">
                     <div className="title">
-                        <h2>basic package</h2>
+                        <h2>Basic Package</h2>
                     </div>
                     <div className="price">
                     <h2> <span className="from">From</span> <span>{monthlyPayment}</span> <span className="money__sign">£</span><span className="amount">{bespoke}</span></h2>
@@ -78,8 +78,6 @@ function Pricing() {
                             <div className="ul__div" > <Check /> <li>Bespok Website Design</li> </div>
                             <div className="ul__div" > <Check /> <li>1 Year Free Domain (worth £35+)</li> </div>
                             <div className="ul__div" > <Check /> <li>100% Ownership</li> </div>
-                            <div className="ul__div" > <Check /> 
-                            <li> Foundation of SEO as standard</li> </div>
                             <div className="ul__div" > <Check /> 
                             <li> Super perfomant</li> </div>
                             <div className="ul__div" > <Check /> 
@@ -97,7 +95,7 @@ function Pricing() {
                 </div>
                 <div className="content full__package">
                     <div className="title">
-                        <h2>Business site</h2>
+                        <h2>Business Site</h2>
                     </div>
                     <div className="price">
                     <h2> <span className="from">From</span><span>{monthlyPayment}</span> <span className="money__sign">£</span><span className="amount">{fullPackage}</span></h2>
@@ -126,7 +124,7 @@ function Pricing() {
                 </div>
                 <div className="content">
                     <div className="title">
-                        <h2>e-Commerce</h2>
+                        <h2>E-Commerce</h2>
                     </div>
                     <div className="price">
                     <h2> <span className="from">From</span> <span>{monthlyPayment}</span> <span className="money__sign">£</span><span className="amount">{eCommerce}</span></h2>

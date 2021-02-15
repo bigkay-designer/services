@@ -57,7 +57,8 @@
 @media screen and (min-width: 1260px){
     .projects{
         .projects__container{
-            
+            max-width: 85%;
+            margin: 0 auto;
         }
     }
 }

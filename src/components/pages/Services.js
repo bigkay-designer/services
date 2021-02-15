@@ -38,7 +38,7 @@ function Services() {
 
     return (
         <div className="services" id="services">
-            <div className="services__container" ref={refElement}>
+            <div className="services__container main__services__container" ref={refElement}>
                 <div className="services__body">
                     {serviceData.map(data => (
                         <div key={data.bodyTitle} className="content">

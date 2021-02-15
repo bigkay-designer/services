@@ -89,7 +89,7 @@ function Footer() {
                 </div>
                 <div className="contact__info">
                     <div className="contact__info__div"><LocationOn className="icons" /><p>United Kindom, Luton</p> </div>
-                    <div className="contact__info__div"><Email className="icons" /> <a href="https://mail.google.com/mail/u/1/?tab=wm&ogbl#inbox?compose=new" target="_blank" rel="noreferrer"><p>info@bkdesignplus.com</p></a> </div>
+                    <div className="contact__info__div"><Email className="icons" /> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@bkdesignplus.com" target="_blank" rel="noreferrer"><p>info@bkdesignplus.com</p></a> </div>
                     <div className="contact__info__div"><Phone className="icons" /><p> <a href="tel:+447709784016">07709784016</a></p> </div>
                 </div>
                 <div className="socials">

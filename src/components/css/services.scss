@@ -1,9 +1,12 @@
 .services{
     margin: 20px 0;
+    .main__services__container{
+        height: 470px !important;
+    }
     .services__container{
         position: relative;
         max-width: 100%;
-        height: 540px;
+        height: 510px;
         margin: 0 auto;
         overflow-x:scroll;
         scroll-behavior: smooth;
@@ -95,7 +98,7 @@
         .services__container{
             position: relative;
             max-width: 100%;
-            height: 550px;
+            // height: 550px;
             margin: 0 auto;
             .services__body{
                 display: flex;
