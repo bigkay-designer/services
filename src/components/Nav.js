@@ -52,13 +52,13 @@ const Nav = () => {
                     {
                         window.location.pathname === '/'? 
                         <>
-                            <Link to="App" smooth={true} duration={1000}>
+                            <Link to="App" smooth="true" duration={1000}>
                                 <img src={logo} alt="logo"/>
                                 <h2 className={`${navScroll && "scroll__color"}`}>BK <br/> <span className="sub__name">DesignPlus</span></h2>
                             </Link>
                         </>
                         :
-                        <a href="/" smooth={true} duration={1000}>
+                        <a href="/" smooth="true" duration={1000}>
                             <img src={logo} alt="logo"/>
                             <h2 className={`${navScroll && "scroll__color"}`}>BK <br/> <span className="sub__name">DesignPlus</span></h2>
                         </a>
@@ -73,11 +73,11 @@ const Nav = () => {
                             {
                                 window.location.pathname === '/' ?
                                 <>
-                                    <Link onClick={()=> setOpenMenu(false)} to="App" smooth={true} duration={1000} offset={-150}> <div className="ul__div " > <Home className="ul__icon" /> <li>home </li> </div> </Link>
-                                    <Link onClick={()=> setOpenMenu(false)} to="services" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <SettingsApplications className="ul__icon" /> <li>services </li> </div> </Link>
-                                    <Link onClick={()=> setOpenMenu(false)} to="projects" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <LibraryBooks className="ul__icon" /><li>Portfolio </li> </div> </Link>
-                                    <Link onClick={()=> setOpenMenu(false)} to="prices" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <LocalOffer className="ul__icon" /> <li>prices </li> </div> </Link>
-                                    <Link onClick={()=> setOpenMenu(false)} to="contact__id" smooth={true} duration={1000} offset={-150}><div className="ul__div " > <ContactPhone className="ul__icon" /><li>contact us</li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="App" smooth="true" duration={1000} offset={-150}> <div className="ul__div " > <Home className="ul__icon" /> <li>home </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="services" smooth="true" duration={1000} offset={-150}><div className="ul__div " > <SettingsApplications className="ul__icon" /> <li>services </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="projects" smooth="true" duration={1000} offset={-150}><div className="ul__div " > <LibraryBooks className="ul__icon" /><li>Portfolio </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="prices" smooth="true" duration={1000} offset={-150}><div className="ul__div " > <LocalOffer className="ul__icon" /> <li>prices </li> </div> </Link>
+                                    <Link onClick={()=> setOpenMenu(false)} to="contact__id" smooth="true" duration={1000} offset={-150}><div className="ul__div " > <ContactPhone className="ul__icon" /><li>contact us</li> </div> </Link>
                                 </>
                                 :
                                 <>
