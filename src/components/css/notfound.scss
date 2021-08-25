@@ -1,0 +1,43 @@
+.notFound__page{
+    main{
+        padding: 30px 15px 0;
+        h1{
+            color: rgb(59, 58, 58);
+        }
+        .contact{
+            text-decoration: none;
+            color: rgb(49, 49, 196);
+            font-weight: bold;
+        }
+        .contact:hover{
+            text-decoration: underline;
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #575757;
+        }
+        .btn{
+            background-color: rgb(255, 66, 66);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 12px;
+            color: ivory;
+        }
+    }
+}
+
+@media screen and (min-width: 760px) {
+    .notFound__page{
+        main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
+}

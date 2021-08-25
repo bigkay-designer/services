@@ -96,15 +96,16 @@ function Contact({option, serviceTitle}) {
                     </div>
                     <div className={`input__divs `}>
                         <SettingsApplications className="icons" />
-                        <select  name="service" onChange={(e) => setService(e.target.value)} required>
+                        <select  name="
+                        " onChange={(e) => setService(e.target.value)} required>
                             {
                                 serviceTitle ? 
                                 <>
                                     <option value={serviceTitle}>{serviceTitle}</option>
-                                    <option disabled value="Basic Package">Basic Package</option>
-                                    <option disabled value="Business Site">Business Site</option>
-                                    <option disabled value="E-commerce">E-Commerce</option>
-                                    <option disabled value="other">Other</option>
+                                    {/* <option value="Basic Package">Basic Package</option>
+                                    <option value="Business Site">Business Site</option>
+                                    <option value="E-commerce">E-Commerce</option>
+                                    <option value="other">Other</option> */}
                                 </>
                                 :
                                 <>
