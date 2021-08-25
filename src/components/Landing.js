@@ -31,7 +31,7 @@ function Landing() {
             <Projects />
             
             <div className="title__landing">
-                <h2>Affordable pricing plan for all customers</h2>
+                <h2>An affordable pricing plan for all customers</h2>
             </div>
             <Pricing />
 

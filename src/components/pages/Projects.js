@@ -25,9 +25,9 @@ function Projects() {
                     </div>
                 </div>
                 <div className="content">
-                    <img src="https://res.cloudinary.com/diqgjrpua/image/upload/v1606799594/portfolio%20images/screenshot-outdoorfinest-co-uk-1606799570706_cskgfe.png" alt=""/>
+                    <img src="https://res.cloudinary.com/diqgjrpua/image/upload/v1629910751/portfolio%20images/Screenshot_2021-08-25_at_12.55.45_d1umug.png" alt=""/>
                     <div className="btn">
-                        <a href="https://outdoorfinest.co.uk/" target="_blank" rel="noreferrer">
+                        <a href="https://bkclothing-a57f8.web.app/" target="_blank" rel="noreferrer">
                             <Visibility />
                             <Button>view project</Button>
                         </a>

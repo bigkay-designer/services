@@ -16,7 +16,7 @@ function Showcase() {
              <ContactModal openFormProp={openForm} closeFormProp={CloseFormHandler} />
 
                 <div className="title">
-                    <p className="question__para">want to transform your business and gain customers?</p>
+                    <p className="question__para">Want to transform your business and gain customers?</p>
                     
                     <p>Well at BK DesignPlus we turn ideas into great digital solutions. We Specialise in <span> Creative and Affordable Web Design</span></p>
 

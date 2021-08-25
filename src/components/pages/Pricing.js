@@ -57,7 +57,7 @@ function Pricing() {
                 <Button onClick={paymentOptionHandler} className={`${monthly && "active"}`}>3 monthly payments</Button>
                 <Button onClick={paymentOptionHandler} className={`${yearly && "active"}`}>ONE-TIME PAYMENT</Button>
             </div>
-            <div className="into__pricing">
+            <div className="intro__pricing">
                 <p>The price of each website varies and it's defined by the <strong>time the project will take</strong> and the <strong>complexity of work</strong>, so these prices are meant as an estimate for the average specification.</p>
                 <p>We prefer to work on an agreed fixed price instead of an hourly, but if needed we can negotiate an hourly rate. <strong>Also, You can spread the cost over 3 months.</strong> </p>
             </div>

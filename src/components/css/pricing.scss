@@ -31,9 +31,10 @@
     }
 
 
-    .into__pricing{
+    .intro__pricing{
         margin: 0 10px;
         p{
+            text-align: center;
             color: rgb(78, 78, 78);
             line-height: 1.5em;
             margin: 10px 0;
@@ -87,7 +88,7 @@
             align-items: center;
             background-color: rgba(241, 239, 239, 0.5);
             border-radius: 20px;
-            box-shadow: 0px 2px 4px rgba(58, 57, 57, 0.5);
+            box-shadow: 0px 0px 12px rgba(58, 57, 57, 0.5);
             padding: 10px 5px;
             -webkit-transition: all .5s;
             -moz-transition: all .5s;
@@ -197,10 +198,10 @@
 
 @media screen and (min-width:760px){
     .prices{
-        .into__pricing{
+        .intro__pricing{
             max-width: 75%;
             margin: auto;
-    }
+        }
         .prices__container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -233,6 +234,10 @@
 
 @media screen and (min-width:1060px){
  .prices{
+    .intro__pricing{
+        max-width: 55%;
+        margin: auto;
+    }
      .prices__container{
         max-width: 90%;
      }
